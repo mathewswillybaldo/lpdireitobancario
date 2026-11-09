@@ -1,0 +1,1388 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Direito do Consumidor e Bancário</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Jhemilly Marquiza, advogada, OAB/MS 31.545. Direito Bancário e do Consumidor: bloqueio de conta, penhora, juros abusivos, consignado, busca e apreensão, golpes, nome sujo, produtos com defeito, voos, plano de saúde e superendividamento. Atendimento 100% online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one 430px mobile column; warm paper hero band over charcoal ground, quiet glass cards, a looping phone "case file" motion piece. */
+:root{
+  --ground:#252423; --paper:#EFEDEA; --ink:#252423; --brown:#5A4A40; --taupe:#BDB7B3; --sand:#D9CFC6;
+  --muted:#3E342D; --green:#2E9E5E; --wa:#1DA851; --wa-d:#168A42; --white:#FFFFFF; --ok:#7DBE95; --warn:#D08A6A; --deep:#141211;
+  --f-sans:'Inter Tight',system-ui,-apple-system,sans-serif;
+  --f-serif:'Instrument Serif',Georgia,serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{background:var(--ground)}
+body{margin:0;-webkit-font-smoothing:antialiased;font-family:var(--f-sans);color:var(--ink)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--warn);outline-offset:2px}
+em,.it{font-family:inherit;font-style:normal;font-weight:500;font-size:inherit!important;letter-spacing:inherit}
+h1,h2,h3{text-wrap:balance}
+
+.wrap{max-width:430px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));position:relative}
+.page{min-height:100vh;overflow-x:hidden;background:linear-gradient(180deg,var(--paper) 0,var(--paper) 392px,var(--ground) 392px)}
+
+/* progress */
+.prog{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--brown),var(--warn));z-index:70}
+
+/* header */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(239,237,234,.82);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);border-bottom:1px solid rgba(37,36,35,.06)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:46px}
+.brand{display:flex;align-items:center;gap:6px}
+.mono{width:20px;height:20px;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--f-sans);font-weight:600;font-size:7.5px;letter-spacing:.3px;line-height:1}
+.brand b{display:block;font-size:8.5px;font-weight:600;letter-spacing:1px;line-height:1}
+.brand small{display:block;font-size:6px;font-weight:500;letter-spacing:1.2px;color:var(--brown);line-height:1;margin-top:2px}
+.live{display:inline-flex;align-items:center;gap:5px;font-size:7px;font-weight:600;letter-spacing:.8px;color:var(--muted);padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.7);box-shadow:inset 0 0 0 1px rgba(37,36,35,.08)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--ok);position:relative;flex-shrink:0}
+.dot::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:1.5px solid var(--ok);animation:ping 1.8s ease-out infinite}
+@keyframes ping{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.9);opacity:0}}
+
+.hwa{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 11px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:7px;font-weight:700;letter-spacing:.8px}
+
+/* WhatsApp: botões verdes */
+a.btn[data-wa],a.btn[href^="https://wa.me"],.wa .btn,.hwa,a.ca[data-wa]{background:var(--wa)!important;color:var(--white)!important;box-shadow:0 8px 18px rgba(29,168,81,.32)!important}
+a.btn[data-wa]:hover,a.btn[href^="https://wa.me"]:hover,.wa:hover .btn,.hwa:hover,a.ca[data-wa]:hover{background:var(--wa-d)!important}
+.hwa .dot{background:var(--white)}.hwa .dot::after{border-color:var(--white)}
+
+/* hero */
+.hero{position:relative;height:392px}
+.hero .ph{position:absolute;top:62px;right:-40px;width:212px;height:auto;transform:scaleX(-1);z-index:1;filter:drop-shadow(0 18px 24px rgba(37,36,35,.18));animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both}
+.hero .dia{position:absolute;top:118px;left:52%;width:26px;height:26px;background:var(--taupe);transform:rotate(45deg);z-index:0;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(405deg)}}
+.hero .ring{position:absolute;top:40px;right:-60px;width:250px;height:250px;border-radius:50%;border:1px dashed rgba(90,74,64,.35);animation:spin2 40s linear infinite;z-index:0}
+@keyframes spin2{to{transform:rotate(360deg)}}
+@keyframes rise{from{opacity:0;transform:scaleX(-1) translateY(24px)}to{opacity:1;transform:scaleX(-1) translateY(0)}}
+.hcopy{position:relative;z-index:3;padding-top:22px;width:53%}
+.eyebrow{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:999px;border:1px solid rgba(90,74,64,.35);font-size:6.5px;font-weight:600;letter-spacing:1.3px;color:var(--brown);background:rgba(255,255,255,.4)}
+.h1{margin:12px 0 0;font-weight:300;font-size:24px;line-height:1.04;letter-spacing:-.8px}
+.rot{display:block;height:30px;overflow:hidden;position:relative;margin-top:1px}
+.rot span{position:absolute;left:0;top:0;font-family:var(--f-sans);font-weight:500;font-size:24px;letter-spacing:-.8px;color:var(--brown);white-space:nowrap;transform:translateY(105%);opacity:0;transition:transform .55s cubic-bezier(.2,.8,.2,1),opacity .4s}
+.rot span.on{transform:none;opacity:1}
+.rot span.off{transform:translateY(-105%);opacity:0}
+.lead{margin:10px 0 0;font-size:9px;line-height:1.45;color:var(--muted)}
+.ctas{display:flex;flex-direction:column;gap:6px;margin-top:14px;align-items:flex-start}
+.btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:7px;font-size:7.5px;font-weight:700;letter-spacing:.7px;position:relative;overflow:hidden;isolation:isolate;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-dark{background:var(--ink);color:var(--white);box-shadow:0 8px 18px rgba(37,36,35,.28)}
+.btn-dark::after,.shine::after{display:none;content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-18deg);animation:sweep 3.6s ease-in-out infinite;z-index:0;pointer-events:none}
+@keyframes sweep{0%,55%{left:-60%}100%{left:130%}}
+.btn-line{color:var(--ink);box-shadow:inset 0 0 0 1px rgba(37,36,35,.35);height:28px}
+.btn-light{background:var(--paper);color:var(--ink)}
+.trust{display:flex;flex-wrap:wrap;gap:6px 9px;margin-top:14px;font-size:6.5px;font-weight:600;letter-spacing:.8px;color:var(--brown)}
+.trust span{display:inline-flex;align-items:center;gap:3px;white-space:nowrap}
+
+/* floating chips */
+.chip{position:absolute;z-index:4;display:inline-flex;align-items:center;gap:5px;padding:5px 8px 5px 5px;border-radius:999px;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 8px 20px rgba(37,36,35,.16),inset 0 0 0 1px rgba(37,36,35,.05);font-size:7px;font-weight:600;color:var(--ink);animation:float 5s ease-in-out infinite}
+.chip i{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--ink);color:var(--white);font-style:normal}
+.chip.c1{top:96px;right:104px;animation-delay:-1s}
+.chip.c2{top:206px;right:6px;animation-delay:-2.4s}
+.chip.c3{top:300px;right:96px;animation-delay:-3.5s}
+.chip.c2 i{background:var(--warn)}
+.chip.c3 i{background:var(--ok)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+/* marquee */
+.mq{position:relative;z-index:5;margin-top:0;background:var(--deep);color:var(--sand);overflow:hidden;border-radius:10px;box-shadow:0 14px 30px rgba(0,0,0,.35);transform:rotate(-1.6deg)}
+.mq-in{display:flex;width:max-content;animation:mq 26s linear infinite;padding:9px 0}
+.mq-in span{font-size:7.5px;font-weight:600;letter-spacing:1.6px;white-space:nowrap;padding-right:14px;display:inline-flex;align-items:center;gap:14px}
+.mq-in span::after{content:"";width:5px;height:5px;background:var(--warn);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* sections */
+.sec{margin-top:40px}
+.kick{font-size:6.5px;font-weight:600;letter-spacing:1.6px;color:var(--taupe);display:flex;align-items:center;gap:6px}
+.kick::before{content:"";width:14px;height:1px;background:currentColor}
+.h2{margin:8px 0 0;font-weight:300;font-size:20px;line-height:1.05;letter-spacing:-.6px;color:var(--paper)}
+.h2 em{font-size:22px;color:var(--taupe)}
+.sub{margin:7px 0 0;font-size:8.5px;line-height:1.5;color:#B9B1AB;max-width:62ch}
+
+.glass{position:relative;overflow:hidden;isolation:isolate;border-radius:12px;background:linear-gradient(160deg,#4A3D35 0%,#1E1916 58%,#120F0E 100%);color:var(--white);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 0 0 1px rgba(255,255,255,.08),0 12px 24px rgba(0,0,0,.3)}
+.glass>*:not(.fx){position:relative;z-index:1}
+.fx{position:absolute;pointer-events:none;z-index:0}
+.fx-arc{width:300px;height:150px;right:-110px;bottom:-96px;border-radius:50%;border-top:13px solid rgba(255,255,255,.45);filter:blur(9px);transform:rotate(-14deg)}
+.fx-glow{width:200px;height:140px;left:-60px;top:-60px;background:radial-gradient(closest-side,rgba(214,204,196,.38),rgba(214,204,196,0));filter:blur(10px)}
+.fx-top{inset:0;background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,0) 40%)}
+@keyframes drift{from{transform:rotate(-14deg) translateX(0)}to{transform:rotate(-6deg) translateX(-40px)}}
+@keyframes drift2{from{transform:translate(0,0)}to{transform:translate(60px,30px)}}
+
+/* phone motion piece */
+.stage{margin-top:14px;padding:14px;display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.phone{width:132px;height:250px;border-radius:22px;background:#0B0A0A;padding:6px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 20px 40px rgba(0,0,0,.5);position:relative}
+.screen{position:relative;width:100%;height:100%;border-radius:17px;overflow:hidden;background:var(--paper);color:var(--ink)}
+.notch{position:absolute;top:5px;left:50%;width:38px;height:9px;margin-left:-19px;border-radius:9px;background:#0B0A0A;z-index:5}
+.scn{position:absolute;inset:0;padding:24px 10px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;text-align:center;opacity:0;transform:scale(.94) translateY(8px);transition:opacity .45s,transform .55s cubic-bezier(.2,.8,.2,1)}
+.scn.on{opacity:1;transform:none}
+.scn .ic{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.scn h4{margin:0;font-size:9px;font-weight:600;line-height:1.2}
+.scn p{margin:0;font-size:6.5px;line-height:1.4;color:var(--muted)}
+.fld{width:100%;height:16px;border-radius:4px;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.12);font-size:6px;display:flex;align-items:center;padding:0 6px;color:#8A817B;font-family:var(--f-mono)}
+.fld.err{box-shadow:inset 0 0 0 1px var(--warn);color:var(--warn)}
+.scn.on .fld.err{animation:shake .5s .6s both}
+@keyframes shake{20%,60%{transform:translateX(-4px)}40%,80%{transform:translateX(4px)}}
+.mini-btn{width:100%;height:16px;border-radius:4px;background:var(--ink);color:var(--white);font-size:6px;font-weight:700;letter-spacing:.6px;display:flex;align-items:center;justify-content:center}
+.doc{width:78px;height:96px;background:var(--white);border-radius:4px;box-shadow:0 6px 14px rgba(37,36,35,.18);padding:8px 7px;display:flex;flex-direction:column;gap:4px;position:relative}
+.doc i{display:block;height:3px;border-radius:2px;background:#DCD6D1;width:100%;transform-origin:0 50%;transform:scaleX(0)}
+.scn.on .doc i{animation:line .5s forwards}
+.scn.on .doc i:nth-child(2){animation-delay:.15s}.scn.on .doc i:nth-child(3){animation-delay:.3s}.scn.on .doc i:nth-child(4){animation-delay:.45s}.scn.on .doc i:nth-child(5){animation-delay:.6s}.scn.on .doc i:nth-child(6){animation-delay:.75s}
+@keyframes line{to{transform:scaleX(1)}}
+.doc i:nth-child(1){width:60%;background:var(--brown)}
+.doc i:nth-child(4){width:80%}.doc i:nth-child(6){width:50%}
+.stamp{position:absolute;right:-10px;bottom:8px;padding:3px 5px;border:1.5px solid var(--brown);color:var(--brown);border-radius:3px;font-size:5.5px;font-weight:700;letter-spacing:.8px;transform:rotate(-12deg) scale(2);opacity:0;background:rgba(255,255,255,.9)}
+.scn.on .stamp{animation:stamp .35s 1.1s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes stamp{to{opacity:1;transform:rotate(-12deg) scale(1)}}
+.avatar{width:44px;height:44px;border-radius:50%;padding:2px;background:conic-gradient(from 0deg,var(--brown),var(--taupe),var(--ok),var(--brown));position:relative}
+.avatar img{width:100%;height:100%;border-radius:50%;border:2px solid var(--white);object-fit:cover;display:block}
+.scn.on .avatar{animation:pop .6s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+.stats{display:flex;gap:10px;font-size:6px;color:var(--muted)}
+.stats b{display:block;font-size:8px;color:var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 7px;border-radius:999px;background:rgba(125,190,149,.18);color:#3E7D55;font-size:6px;font-weight:700;letter-spacing:.6px}
+.pbar{position:absolute;left:10px;right:10px;bottom:10px;height:2px;border-radius:2px;background:rgba(37,36,35,.1);overflow:hidden;z-index:4}
+.pbar i{display:block;height:100%;width:100%;background:var(--brown);transform-origin:0 50%;transform:scaleX(0)}
+.pbar i.run{animation:pb var(--d,3.2s) linear forwards}
+@keyframes pb{to{transform:scaleX(1)}}
+.steps-mini{display:flex;flex-direction:column;gap:2px;min-width:0}
+.sm{display:grid;grid-template-columns:18px minmax(0,1fr);gap:6px;padding:7px 6px;border-radius:8px;transition:background .35s,opacity .35s;opacity:.45;cursor:pointer;border:0;background:none;text-align:left;color:var(--white)}
+.sm.on{opacity:1;background:rgba(255,255,255,.07)}
+.sm span{font-family:var(--f-sans);font-weight:300;font-size:13px;line-height:1;color:var(--sand)}
+.sm b{display:block;font-size:8px;font-weight:600;line-height:1.2}
+.sm small{display:block;font-size:6.5px;line-height:1.35;color:#BDB3AB;margin-top:2px}
+
+/* platform picker */
+.ind{position:absolute;z-index:0;top:3px;bottom:3px;left:0;width:0;border-radius:7px;background:var(--paper);box-shadow:0 4px 10px rgba(0,0,0,.3);transition:transform .45s cubic-bezier(.2,.8,.2,1),width .45s cubic-bezier(.2,.8,.2,1)}
+.tabs{margin-top:14px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.tabs .ind{display:none}
+.tab{overflow:hidden;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:11px 4px 10px;border-radius:10px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);color:var(--paper);font-size:8px;font-weight:600;letter-spacing:.2px;transition:background .25s,color .25s,box-shadow .25s,transform .2s;position:relative}
+.tab:active{transform:scale(.97)}
+.tab::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--bg)}
+.tab .ti{color:var(--bc)!important;background:rgba(255,255,255,.92)!important}
+.tab .ti{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);color:var(--paper);transition:background .25s,color .25s}
+.tab[aria-selected="true"]{background:var(--paper);color:var(--ink);box-shadow:0 8px 18px rgba(0,0,0,.3),inset 0 0 0 1.5px var(--bc)}
+.tab[aria-selected="true"] .ti{box-shadow:inset 0 0 0 1.5px var(--bc)}
+.tab[aria-selected="true"] .ti{background:var(--ink);color:var(--paper)}
+.panel{margin-top:10px;padding:14px;border-radius:12px;background:var(--paper);color:var(--ink);box-shadow:0 12px 24px rgba(0,0,0,.3)}
+.panel-in{animation:pin .45s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.ph-top{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid rgba(37,36,35,.1)}
+.pic{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:var(--white);color:var(--bc);box-shadow:inset 0 0 0 1.5px var(--bc);flex-shrink:0}
+.panel{position:relative;overflow:hidden}
+.panel::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--bg)}
+.ph-top b{display:block;color:var(--ink);font-size:16px;font-weight:700;letter-spacing:-.4px;line-height:1.1}
+.ph-top small{display:block;font-size:7px;font-weight:600;letter-spacing:1.2px;color:var(--brown);margin-top:3px}
+.plbl{display:block;margin:12px 0 7px;font-size:7px;font-weight:700;letter-spacing:1.3px;color:var(--brown)}
+.lst{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.lst li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;align-items:center;padding:8px 10px 8px 8px;border-radius:9px;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.06);font-size:9px;font-weight:500;line-height:1.35;color:var(--ink);opacity:0;animation:li .4s cubic-bezier(.2,.8,.2,1) forwards}
+.gk{width:20px;height:20px;border-radius:50%;background:var(--green);color:var(--white);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(46,158,94,.3)}
+@keyframes li{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.what{margin-top:10px;display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;padding:10px;border-radius:9px;background:rgba(46,158,94,.09);box-shadow:inset 0 0 0 1px rgba(46,158,94,.22)}
+.what .wi{width:20px;height:20px;border-radius:6px;background:var(--green);color:var(--white);display:flex;align-items:center;justify-content:center}
+.what b{display:block;font-size:7px;font-weight:700;letter-spacing:1.2px;color:#1F6E41}
+.what span{display:block;margin-top:3px;font-size:8.5px;line-height:1.5;color:var(--muted)}
+.panel .btn{margin-top:12px;width:100%;justify-content:center;height:36px;font-size:8px}
+
+/* diagnostic */
+.diag{margin-top:14px;background:var(--white);border-radius:12px;padding:14px;color:var(--ink);position:relative;overflow:hidden}
+.diag::before{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;background:radial-gradient(closest-side,rgba(189,183,179,.5),rgba(189,183,179,0));filter:blur(6px);}
+.dsteps{display:flex;gap:4px;position:relative}
+.dsteps i{flex:1;height:3px;border-radius:3px;background:#E6E1DD;overflow:hidden;position:relative}
+.dsteps i::after{content:"";position:absolute;inset:0;background:var(--brown);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.dsteps i.done::after{transform:scaleX(1)}
+.q{position:relative;margin-top:12px}
+.q-lbl{font-size:6.5px;font-weight:600;letter-spacing:1.3px;color:var(--brown)}
+.q h3{margin:4px 0 10px;font-weight:300;font-size:15px;letter-spacing:-.4px;line-height:1.1}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.opt{border:0;text-align:left;padding:9px 9px;border-radius:8px;background:var(--paper);font-size:8px;font-weight:500;line-height:1.25;box-shadow:inset 0 0 0 1px rgba(37,36,35,.06);transition:transform .2s,background .25s,color .25s;display:flex;align-items:center;gap:6px;min-width:0}
+.opt:active{transform:scale(.97)}
+.opt[aria-pressed="true"]{background:var(--ink);color:var(--white)}
+.opt svg{flex-shrink:0}
+.res{position:relative;margin-top:2px}
+.meter{display:flex;align-items:flex-end;gap:3px;height:28px;margin:8px 0 6px}
+.meter i{flex:1;border-radius:2px;background:#E6E1DD;transition:background .3s,height .5s cubic-bezier(.2,.8,.2,1);height:20%}
+.meter i.on{background:var(--warn)}
+.res-tag{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:999px;background:rgba(208,138,106,.14);color:#9A5638;font-size:6.5px;font-weight:700;letter-spacing:1px}
+.res h3{margin:8px 0 0;font-weight:300;font-size:15px;line-height:1.12;letter-spacing:-.4px}
+.res p{margin:6px 0 0;font-size:8px;line-height:1.5;color:var(--muted)}
+.res .row{display:flex;gap:6px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.reset{border:0;background:none;font-size:7px;font-weight:600;letter-spacing:.6px;color:var(--brown);padding:8px 4px;text-decoration:underline;text-underline-offset:2px}
+.summary{margin-top:10px;padding:8px;border-radius:7px;background:var(--paper);font-family:var(--f-mono);font-size:6.5px;line-height:1.6;color:var(--muted)}
+
+/* segmented do/dont */
+.seg{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;padding:3px;border-radius:10px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);position:relative}
+.seg button{position:relative;z-index:1;border:0;background:none;padding:8px;font-size:7.5px;font-weight:700;letter-spacing:.8px;color:#BDB3AB;transition:color .3s}
+.seg button[aria-selected="true"]{color:var(--ink)}
+.seg .ind{width:calc(50% - 3px);left:3px}
+.chk{margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.ck{display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;padding:10px;border-radius:10px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);color:var(--white);opacity:0;animation:li .45s cubic-bezier(.2,.8,.2,1) forwards}
+.ck .n{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;background:rgba(125,190,149,.16);color:var(--ok)}
+.ck.no .n{background:rgba(208,138,106,.16);color:var(--warn)}
+.ck b{display:block;font-size:8.5px;font-weight:600;line-height:1.25}
+.ck small{display:block;font-size:7px;line-height:1.45;color:#BDB3AB;margin-top:2px}
+
+/* timeline */
+.tl{margin-top:16px;position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:7.5px;top:6px;bottom:6px;width:2px;background:rgba(255,255,255,.12)}
+.tl .fill{position:absolute;left:7.5px;top:6px;width:2px;border-radius:2px;height:calc(100% - 12px);background:linear-gradient(180deg,#FEDA75,#FA7E1E,#D62976,#962FBF,#4F5BD5);transform-origin:50% 0;transform:scaleY(var(--p,0))}
+.st{position:relative;padding:0 0 16px}
+.st::before{content:"";position:absolute;left:-22px;top:3px;width:9px;height:9px;border-radius:50%;background:var(--ground);box-shadow:0 0 0 1px rgba(255,255,255,.3);transition:background .4s,box-shadow .4s}
+.st.lit::before{background:var(--lc,#D62976);box-shadow:0 0 0 4px rgba(214,41,118,.18)}
+.st .no{font-family:var(--f-sans);font-weight:300;font-size:16px;letter-spacing:-.4px;line-height:1;color:var(--sand)}
+.st b{display:block;margin-top:2px;font-size:11px;font-weight:500;color:var(--paper);letter-spacing:-.2px}
+.st p{margin:3px 0 0;font-size:8px;line-height:1.5;color:#B9B1AB}
+
+/* law cards */
+.cards{margin-top:14px;display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1 * max(16px,env(safe-area-inset-right,0px)));padding:0 max(16px,env(safe-area-inset-right,0px)) 6px max(16px,env(safe-area-inset-left,0px))}
+.cards::-webkit-scrollbar{display:none}
+.lc{flex:0 0 74%;scroll-snap-align:start;padding:14px 13px;min-height:168px;display:flex;flex-direction:column;gap:7px;background:var(--paper);color:var(--ink);border-radius:12px;box-shadow:0 12px 24px rgba(0,0,0,.3)}
+.lc .lh{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.lc .li{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--ink);color:var(--paper);flex-shrink:0}
+.lc .ref{font-family:var(--f-mono);font-size:7px;font-weight:500;color:var(--brown);padding:3px 6px;border-radius:4px;background:rgba(90,74,64,.1);white-space:nowrap}
+.lc .tg{margin-top:3px;font-size:7px;font-weight:700;letter-spacing:1.2px;color:var(--brown)}
+.lc b{font-weight:700;font-size:16px;line-height:1.12;letter-spacing:-.4px;color:var(--ink)}
+.lc b em{font-weight:700;color:var(--brown)}
+.lc p{margin:auto 0 0;font-size:9px;line-height:1.45;color:var(--muted)}
+.cdots{display:flex;gap:4px;justify-content:center;margin-top:8px}
+.cdots i{width:5px;height:5px;border-radius:5px;background:rgba(255,255,255,.2);transition:width .3s,background .3s}
+.cdots i.on{width:14px;background:var(--sand)}
+
+/* faq */
+.faq{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.fq{border-radius:10px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);overflow:hidden}
+.fq button{width:100%;border:0;background:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;text-align:left;color:var(--paper);font-size:9px;font-weight:500;line-height:1.3}
+.fq .pl{width:18px;height:18px;flex-shrink:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);transition:transform .35s,background .3s}
+.fq[data-open="true"] .pl{transform:rotate(45deg);background:var(--paper);color:var(--ink)}
+.fa{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.2,.8,.2,1)}
+.fq[data-open="true"] .fa{grid-template-rows:1fr}
+.fa>div{overflow:hidden}
+.fa p{margin:0;padding:0 12px 12px;font-size:8px;line-height:1.55;color:#BDB3AB}
+
+/* final cta */
+.wa{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:40px;padding:18px 16px;background:var(--white);border-radius:12px;color:var(--ink)}
+.wa .tt{font-weight:300;font-size:19px;line-height:1.05;letter-spacing:-.6px}
+.wa .tt em{color:var(--brown)}
+.wa small{font-size:8px;line-height:1.45;color:var(--muted);max-width:260px}
+.wa .btn{margin-top:6px}
+
+.ig{margin-top:12px;display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:12px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);color:var(--paper)}
+.ig .av{width:30px;height:30px;border-radius:50%;padding:2px;background:linear-gradient(45deg,var(--brown),var(--taupe),var(--brown));flex-shrink:0}
+.ig .av img{width:100%;height:100%;border-radius:50%;border:2px solid var(--ground);object-fit:cover;display:block}
+.ig b{display:block;font-size:9.5px;font-weight:600}
+.ig small{display:block;font-size:7px;color:var(--taupe)}
+.ig .go{margin-left:auto;font-size:7px;font-weight:700;letter-spacing:.6px;color:var(--taupe);display:inline-flex;align-items:center;gap:3px}
+
+.foot{padding:34px 0 110px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;color:#8F8781}
+.foot span{font-size:7px;line-height:1.5;max-width:300px}
+
+/* about */
+.about{margin-top:14px;background:var(--paper);border-radius:12px;color:var(--ink);padding:16px}
+.ab-top{display:flex;align-items:center;gap:12px}
+.ab-ph{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--taupe)}
+.ab-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block;filter:grayscale(1)}
+.ab-id{min-width:0}
+.ab-id .nm{display:block;font-weight:600;font-size:14px;letter-spacing:-.3px;line-height:1.1}
+.ab-id .oab{display:block;margin-top:3px;font-size:7.5px;font-weight:500;letter-spacing:.6px;color:var(--brown)}
+.ab-bio{margin:14px 0 0;font-size:9px;line-height:1.6;color:var(--muted)}
+.ab-meta{margin:12px 0 0;padding:12px 0 0;border-top:1px solid rgba(37,36,35,.1);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ab-meta span{font-size:7px;line-height:1.4;color:var(--muted)}
+.ab-meta b{display:block;font-size:9px;font-weight:600;color:var(--ink)}
+.ab-style{margin:12px 0 0;font-size:8px;line-height:1.5;color:var(--muted)}
+.ab-style b{font-weight:600;color:var(--ink)}
+
+/* fees */
+.fees{margin-top:12px;display:flex;flex-direction:column}
+.fee{display:grid;grid-template-columns:86px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid rgba(255,255,255,.1)}
+.fee:last-child{border-bottom:1px solid rgba(255,255,255,.1)}
+.fee b{font-size:7px;font-weight:600;letter-spacing:1px;color:var(--taupe);line-height:1.5}
+.fee span{font-size:8px;line-height:1.5;color:#B9B1AB}
+
+/* contact */
+.ct{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.cr{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:9px;align-items:center;padding:9px 9px 9px 10px;border-radius:10px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);color:var(--paper)}
+.cr .ci{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(217,207,198,.1);color:var(--sand)}
+.cr .cl{display:block;font-size:6.5px;font-weight:600;letter-spacing:1.2px;color:var(--taupe)}
+.cr .cv{display:block;margin-top:2px;font-size:9.5px;font-weight:500;user-select:all;-webkit-user-select:all;overflow-wrap:anywhere}
+.cr .acts{display:flex;gap:4px}
+.ca{height:26px;padding:0 9px;border:0;border-radius:6px;display:inline-flex;align-items:center;gap:4px;font-size:6.5px;font-weight:700;letter-spacing:.6px;background:rgba(255,255,255,.08);color:var(--paper);transition:background .25s,color .25s}
+.ca.pri{background:var(--paper);color:var(--ink)}
+.ca.done{background:var(--ok);color:var(--deep)}
+.cbadges{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.cbadges span{display:inline-flex;align-items:center;gap:4px;padding:5px 8px;border-radius:999px;font-size:6.5px;font-weight:600;letter-spacing:.9px;color:var(--sand);box-shadow:inset 0 0 0 1px rgba(217,207,198,.25)}
+
+/* sticky bottom bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));transform:translateY(120%);transition:transform .5s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.bar.show{transform:none;pointer-events:auto}
+.bar-in{max-width:406px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:8px 8px 8px 12px;border-radius:14px;background:rgba(20,18,17,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 14px 30px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.1);color:var(--paper)}
+.bar-in b{display:block;font-size:9px;font-weight:600}
+.bar-in small{display:block;font-size:7px;color:var(--taupe);margin-top:1px}
+.bar-in .btn{margin-left:auto;flex-shrink:0}
+
+/* reveal */
+.rv{transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.pre{opacity:0;transform:translateY(22px)}
+
+
+/* ===== caixas claras com texto e ícones escuros (sem degradês) ===== */
+.glass{background:var(--paper)!important;color:var(--ink);box-shadow:0 12px 24px rgba(0,0,0,.3)}
+.fx{display:none}
+.sm{color:var(--ink);opacity:.5}
+.sm.on{opacity:1;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.08)}
+.sm span{color:var(--brown);font-weight:500}
+.sm small{color:var(--muted)}
+.tab{background:var(--paper);color:var(--ink);box-shadow:none}
+.tab .ti{background:var(--white)!important}
+.tab[aria-selected="true"]{background:var(--white);box-shadow:0 8px 18px rgba(0,0,0,.35),inset 0 0 0 2px var(--bc)}
+.seg{background:var(--paper);box-shadow:none}
+.seg button{color:var(--muted)}
+.seg button[aria-selected="true"]{color:var(--paper)}
+.seg .ind{background:var(--ink);box-shadow:none}
+.ck{background:var(--paper);color:var(--ink);box-shadow:none}
+.ck small{color:var(--muted)}
+.ck .n{background:rgba(46,158,94,.14);color:var(--green)}
+.ck.no .n{background:rgba(181,101,74,.14);color:#B5654A}
+.pm{background:var(--paper);color:var(--ink);box-shadow:none}
+.pm .pi{background:rgba(37,36,35,.08);color:var(--ink)}
+.pm small{color:var(--muted)}
+.pm.hl{background:var(--white);box-shadow:inset 0 0 0 1.5px var(--green)}
+.pm.hl .pi{background:var(--green);color:var(--white)}
+.pm.hl b em{color:var(--green)}
+.note{color:var(--taupe)}
+.fq{background:var(--paper);box-shadow:none}
+.fq button{color:var(--ink)}
+.fq .pl{background:rgba(37,36,35,.08)}
+.fq[data-open="true"] .pl{background:var(--ink);color:var(--paper)}
+.fa p{color:var(--muted)}
+.cr{background:var(--paper);color:var(--ink);box-shadow:none}
+.cr .ci{background:rgba(37,36,35,.07);color:var(--ink)}
+.cr .cl{color:var(--brown)}
+.ca{background:rgba(37,36,35,.08);color:var(--ink)}
+.ca.pri{background:var(--ink);color:var(--paper)}
+.bar-in{background:rgba(239,237,234,.95);color:var(--ink);box-shadow:0 14px 30px rgba(0,0,0,.45),inset 0 0 0 1px rgba(37,36,35,.08)}
+.bar-in small{color:var(--muted)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .mq-in{animation:none}
+}
+
+/* ===== complementos: consumidor e bancário ===== */
+.hero .ph{top:84px;right:-26px;width:204px;transform:none;animation-name:rise2;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
+@keyframes rise2{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+select.date{appearance:none;-webkit-appearance:none;font-family:var(--f-sans);font-size:9px;font-weight:500;background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%235A4A40' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center;padding-right:26px}
+.pring .c b{font-size:20px}
+.lc .big{font-size:28px}
+.rot span:nth-child(odd){color:#1F5FAE}
+.rot span:nth-child(even){color:#C62E2E}
+.slip{width:100%;background:var(--white);border-radius:6px;box-shadow:0 4px 10px rgba(37,36,35,.12);padding:7px;text-align:left;font-family:var(--f-mono)}
+.slip .hd{display:flex;justify-content:space-between;font-size:5.5px;font-weight:500;letter-spacing:.5px;color:var(--brown);padding-bottom:4px;border-bottom:1px dashed #D9D2CB}
+.slip .r{display:flex;justify-content:space-between;align-items:center;font-size:5.6px;padding:3.5px 3px;border-radius:3px;color:var(--muted)}
+.slip .r.bad{background:rgba(208,138,106,.16);color:#9A5638}
+.scn.on .slip .r.bad{animation:shake .5s .6s both}
+.scn.on .slip .r.bad+.r.bad{animation-delay:1s}
+.alert{display:inline-flex;align-items:center;gap:4px;padding:3px 7px;border-radius:999px;background:rgba(208,138,106,.16);color:#9A5638;font-size:5.8px;font-weight:700;letter-spacing:.6px}
+.ckl{width:100%;text-align:left;font-family:var(--f-mono);font-size:6px;line-height:1.85;color:var(--muted)}
+.ckl span{display:block;opacity:0}
+.scn.on .ckl span{animation:li .4s forwards}
+.scn.on .ckl span:nth-child(2){animation-delay:.2s}.scn.on .ckl span:nth-child(3){animation-delay:.4s}.scn.on .ckl span:nth-child(4){animation-delay:.6s}.scn.on .ckl span:nth-child(5){animation-delay:.8s}
+.scn .ic{background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.12);color:var(--brown)}
+.pje{font-family:var(--f-mono);font-size:5.6px;color:var(--brown);letter-spacing:.4px}
+.bars{width:100%;display:flex;flex-direction:column;gap:5px;text-align:left}
+.bars div{font-size:5.8px;font-weight:600;color:var(--muted)}
+.bars i{display:block;height:5px;border-radius:3px;background:#E6E1DD;margin-top:2px;overflow:hidden;position:relative}
+.bars i::after{content:"";position:absolute;inset:0;background:var(--green);transform-origin:0 50%;transform:scaleX(0)}
+.scn.on .bars i::after{animation:grow .9s cubic-bezier(.2,.8,.2,1) forwards}
+.scn.on .bars div:nth-child(1) i::after{--w:.86}.scn.on .bars div:nth-child(2) i::after{--w:.64;animation-delay:.15s}.scn.on .bars div:nth-child(3) i::after{--w:.48;animation-delay:.3s}.scn.on .bars div:nth-child(4) i::after{--w:.35;animation-delay:.45s}
+@keyframes grow{to{transform:scaleX(var(--w,.5))}}
+
+/* prazo */
+.prz{margin-top:14px;background:var(--paper);border-radius:12px;padding:14px;color:var(--ink);box-shadow:0 12px 24px rgba(0,0,0,.3)}
+.prz-row{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center}
+.pring{position:relative;width:96px;height:96px}
+.pring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.pring .tr{fill:none;stroke:#E2DCD6;stroke-width:8}
+.pring .pr{fill:none;stroke:var(--green);stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1),stroke .4s}
+.pring .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.pring .c b{font-weight:600;font-size:22px;letter-spacing:-.6px;line-height:1;font-variant-numeric:tabular-nums}
+.pring .c small{font-size:5.8px;font-weight:700;letter-spacing:.8px;color:var(--brown);margin-top:3px}
+.fld-l{display:block;font-size:6.5px;font-weight:700;letter-spacing:1.2px;color:var(--brown)}
+.date{margin-top:5px;width:100%;height:34px;border-radius:8px;border:0;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.12);padding:0 10px;font-family:var(--f-mono);font-size:10px;color:var(--ink)}
+.prz-msg{margin:8px 0 0;font-size:8px;line-height:1.5;color:var(--muted)}
+.prz-msg b{color:var(--ink);font-weight:600}
+.span5{margin-top:14px}
+.span5 .lab{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:6px;color:var(--brown)}
+.track{position:relative;height:18px;margin-top:4px;border-radius:5px;background:var(--white);overflow:hidden;box-shadow:inset 0 0 0 1px rgba(37,36,35,.06)}
+.track .f5{position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(46,158,94,.18) 0 6px,rgba(46,158,94,.07) 6px 12px);transform-origin:100% 50%;animation:f5 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes f5{from{transform:scaleX(0)}}
+.track span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6.3px;font-weight:700;letter-spacing:.6px;color:#1F6E41}
+.prz .row{display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.prz .btn{height:34px}
+.ex{font-size:6.5px;color:var(--brown)}
+
+/* cards de direitos: número grande */
+.lc .big{font-weight:600;font-size:30px;line-height:1;letter-spacing:-1px;color:var(--ink);font-variant-numeric:tabular-nums;margin-top:2px}
+.lc .big small{font-size:13px;font-weight:500;color:var(--brown);letter-spacing:-.3px}
+.tl .fill{background:linear-gradient(180deg,#E1306C 0%,#F77737 50%,#833AB4 100%)}
+.tl::before{background:linear-gradient(180deg,rgba(225,48,108,.22),rgba(247,119,55,.22),rgba(131,58,180,.22))}
+.st.lit::before{background:var(--lc);box-shadow:0 0 0 4px color-mix(in srgb,var(--lc) 22%,transparent)}
+
+/* ===== hero redesenhado ===== */
+.page{background:linear-gradient(180deg,var(--paper) 0,var(--paper) 372px,var(--ground) 372px)}
+.hero{height:372px;isolation:isolate}
+.hero::before{content:"";position:absolute;z-index:-2;top:-46px;bottom:0;left:-200px;right:-200px;
+  background:
+    radial-gradient(230px 230px at calc(50% + 110px) 120px,rgba(255,255,255,.95),rgba(255,255,255,0) 70%),
+    linear-gradient(0deg,rgba(120,96,78,.22) 0%,rgba(120,96,78,.08) 30%,rgba(120,96,78,0) 60%),
+    linear-gradient(180deg,#F4F2EF 0%,#ECE6DF 100%)}
+.hv{position:absolute;right:0;top:18px;width:184px;height:316px;pointer-events:none;z-index:1;transform-origin:100% 0}
+.hv .aline,.hv .arch{position:absolute;border-radius:92px 92px 18px 18px}
+.hv .aline{inset:-8px;border-radius:100px 100px 24px 24px;border:1px solid rgba(160,120,80,.45);animation:archIn 1.2s .15s cubic-bezier(.2,.8,.2,1) both}
+.hv .aline::before{content:"";position:absolute;left:50%;top:-4px;width:7px;height:7px;margin-left:-3.5px;background:linear-gradient(135deg,#D9B88A,#A87E50);transform:rotate(45deg)}
+.hv .arch{inset:0;overflow:hidden;
+  background:radial-gradient(130px 110px at 50% 26%,rgba(255,240,224,.7),rgba(255,240,224,0) 75%),linear-gradient(176deg,#CBB49E 0%,#A88E78 55%,#7A604F 100%);
+  box-shadow:0 34px 44px -22px rgba(52,38,28,.7),0 12px 20px -12px rgba(52,38,28,.45),inset 0 1px 0 rgba(255,255,255,.55);
+  animation:archIn 1s cubic-bezier(.2,.8,.2,1) both}
+.hero .hv .ph{position:absolute;left:-63px;top:10px;width:300px;height:auto;max-width:none;transform:none;z-index:1;
+  filter:saturate(1.05) contrast(1.03) drop-shadow(0 8px 14px rgba(52,36,26,.35));-webkit-mask-image:none;mask-image:none;animation:rise2 1.1s .1s cubic-bezier(.2,.8,.2,1) both}
+.hv .arch::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(44,32,25,.78) 0%,rgba(44,32,25,.42) 22%,rgba(44,32,25,.1) 45%,rgba(44,32,25,0) 62%)}
+.hv .arch::after{content:"";position:absolute;inset:8px;z-index:3;border-radius:84px 84px 12px 12px;border:1px solid rgba(255,246,236,.3)}
+.hv .floor{position:absolute;left:4px;right:4px;bottom:-14px;height:22px;border-radius:50%;background:radial-gradient(closest-side,rgba(37,28,22,.38),rgba(37,28,22,0));filter:blur(2px)}
+@keyframes archIn{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes rise2{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+/* texto */
+.hcopy{width:51%;padding-top:20px}
+.eyebrow{background:rgba(255,255,255,.8);border-color:rgba(176,138,94,.45);color:#6B4A36;box-shadow:0 4px 12px -5px rgba(62,46,36,.25)}
+.eyebrow .dot{background:#B08A5E}.eyebrow .dot::after{border-color:#B08A5E}
+.h1{font-size:23px;color:#2A2522;letter-spacing:-.9px}
+.rot{height:30px}
+.rot span,.rot span:nth-child(odd),.rot span:nth-child(even){font-size:21px;font-weight:700;letter-spacing:-.7px;color:#0B3FB5;background:none;-webkit-background-clip:border-box;background-clip:border-box}
+.hcopy .h1::after{content:"";display:block;width:44px;height:2px;margin-top:6px;border-radius:2px;background:linear-gradient(90deg,#0B3FB5,rgba(11,63,181,0))}
+.lead{margin-top:10px}
+.btn-line{background:rgba(255,255,255,.65);box-shadow:inset 0 0 0 1px rgba(90,74,64,.28),0 6px 14px -8px rgba(62,46,36,.3)}
+.trust span{color:#6B4A36}
+@media (max-width:400px){.hv{transform:scale(.84)}.hcopy{width:53%}.h1{font-size:21.5px}.rot span,.rot span:nth-child(odd),.rot span:nth-child(even){font-size:19.5px}}
+
+/* sem foto: texto em largura total */
+.page{background:var(--ground)}
+.hero{height:auto;padding-bottom:40px}
+.hcopy{width:100%;padding-top:30px}
+.h1{font-size:30px;letter-spacing:-1.1px}
+.rot{height:38px}
+.rot span,.rot span:nth-child(odd),.rot span:nth-child(even){font-size:28px}
+.lead{max-width:340px;font-size:10px}
+.ctas{flex-direction:row;flex-wrap:wrap;align-items:center}
+@media (max-width:400px){.h1{font-size:27px}.rot{height:34px}.rot span,.rot span:nth-child(odd),.rot span:nth-child(even){font-size:25px}}
+
+/* v3: abas por área, marquee, título */
+#gseg{margin-top:12px}
+.tabs{margin-top:8px}
+.mq{margin-top:-14px}
+.opts .opt span{min-width:0}
+.h1{font-size:29px}
+.rot span,.rot span:nth-child(odd),.rot span:nth-child(even){font-size:27px;color:#0B3FB5}
+.wa .tt{font-size:18px}
+@media (max-width:400px){.h1{font-size:26px}.rot span,.rot span:nth-child(odd),.rot span:nth-child(even){font-size:24px}}
+/* ===== simulador v2 (vermelho) ===== */
+#prazo{--red:#D1342B;--red-d:#A8231C;--red-l:rgba(209,52,43,.1)}
+.kick.kr{color:#F08A82}
+.kick.kr::before{display:none}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--red,#D1342B);position:relative;flex-shrink:0;display:inline-block}
+.pulse::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:1.5px solid var(--red,#D1342B);animation:ping 1.4s ease-out infinite}
+#prazo .h2 em.red{color:#FF6B5F}
+#prazo .sub .hl{color:#fff;font-weight:600;background:rgba(209,52,43,.35);padding:0 3px;border-radius:3px}
+.sim{margin-top:14px;background:var(--paper);border-radius:14px;color:var(--ink);overflow:hidden;box-shadow:0 18px 36px rgba(0,0,0,.4)}
+.sim-top{display:flex;align-items:center;gap:7px;padding:9px 14px;background:linear-gradient(90deg,#A8231C,#D1342B);color:#fff}
+.sim-top .pulse{background:#fff}.sim-top .pulse::after{border-color:#fff}
+.sim-top b{font-size:7.5px;font-weight:700;letter-spacing:1.3px}
+.sim-tag{margin-left:auto;font-family:var(--f-mono);font-size:6.5px;padding:3px 6px;border-radius:4px;background:rgba(255,255,255,.18)}
+.sim-step{padding:12px 14px 0}
+.sn{display:inline-flex;width:16px;height:16px;border-radius:50%;align-items:center;justify-content:center;background:var(--ink);color:var(--paper);font-size:7.5px;font-weight:700;margin-right:6px;vertical-align:middle}
+.sl{font-size:9.5px;font-weight:600;vertical-align:middle;letter-spacing:-.1px}
+.sl small{font-size:7.5px;font-weight:500;color:var(--brown)}
+.og{margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.og button{border:0;text-align:left;padding:8px 9px;border-radius:9px;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.1);transition:box-shadow .2s,background .2s,transform .15s}
+.og button:active{transform:scale(.97)}
+.og button b{display:block;font-size:9px;font-weight:600}
+.og button small{display:block;font-size:6.5px;color:var(--muted);margin-top:1px}
+.og button[aria-checked="true"]{background:#FFF4F3;box-shadow:inset 0 0 0 1.5px var(--red),0 6px 14px -8px rgba(209,52,43,.6)}
+.og button[aria-checked="true"] b{color:var(--red-d)}
+.money{margin-top:8px;display:flex;align-items:center;height:42px;border-radius:10px;background:var(--white);box-shadow:inset 0 0 0 1.5px rgba(37,36,35,.14);padding:0 12px;gap:6px;transition:box-shadow .2s}
+.money:focus-within{box-shadow:inset 0 0 0 2px var(--red)}
+.money span{font-size:11px;font-weight:600;color:var(--brown)}
+.money input{flex:1;min-width:0;border:0;outline:0;background:none;font-family:var(--f-sans);font-size:17px;font-weight:600;letter-spacing:-.4px;color:var(--ink);font-variant-numeric:tabular-nums}
+.quick{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap}
+.quick button{border:0;height:22px;padding:0 9px;border-radius:999px;background:rgba(37,36,35,.07);font-size:7px;font-weight:600;color:var(--muted)}
+.quick button::before{content:"R$ "}
+#prazo .ex{display:block;margin-top:5px;font-size:6.5px;color:var(--brown)}
+#prazo .date{margin-top:8px}
+.res2{margin:14px 14px 0;padding:12px;border-radius:12px;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.06)}
+.r2-row{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:center}
+#prazo .pring{width:92px;height:92px}
+#prazo .pring .pr{stroke:var(--red)}
+#prazo .pring .c b{font-size:21px}
+#prazo .pring .c small{font-size:5.5px;line-height:1.25;color:var(--red-d)}
+.vals{display:flex;flex-direction:column;gap:6px}
+.v{padding:7px 9px;border-radius:8px}
+.v small{display:block;font-size:6px;font-weight:700;letter-spacing:1px}
+.v b{display:block;margin-top:2px;font-size:15px;font-weight:700;letter-spacing:-.4px;font-variant-numeric:tabular-nums}
+.v.ok{background:var(--red-l)}.v.ok small{color:var(--red-d)}.v.ok b{color:var(--red-d)}
+.v.risk{background:rgba(37,36,35,.05)}.v.risk small{color:var(--muted)}.v.risk b{color:var(--muted)}
+#prazo .prz-msg{margin:10px 0 0;font-size:8px;line-height:1.55;color:var(--muted)}
+.clock{margin-top:10px;display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px;align-items:center;padding:9px;border-radius:9px;background:#FFF1EF;box-shadow:inset 0 0 0 1px rgba(209,52,43,.28)}
+.ci2{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;background:var(--red);color:#fff}
+.clock b{display:block;font-size:9px;font-weight:700;color:var(--red-d)}
+.clock small{display:block;margin-top:1px;font-size:7px;line-height:1.4;color:var(--muted)}
+.clock.late{background:rgba(37,36,35,.05);box-shadow:inset 0 0 0 1px rgba(37,36,35,.12)}
+.clock.late .ci2{background:var(--ink)}.clock.late b{color:var(--ink)}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:8px}
+.days i{height:5px;border-radius:3px;background:rgba(209,52,43,.15)}
+.days i.used{background:var(--red)}
+.days i.now{background:var(--red);animation:blink 1s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+.why{margin:12px 14px 0;display:flex;flex-direction:column;gap:6px}
+.wl{font-size:6.5px;font-weight:700;letter-spacing:1.3px;color:var(--red-d)}
+.w{display:grid;grid-template-columns:16px minmax(0,1fr);gap:7px;font-size:8px;line-height:1.5;color:var(--muted)}
+.w b{color:var(--ink);font-weight:600}
+.wn{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--red-l);color:var(--red);font-size:8px;font-weight:800;margin-top:1px}
+#prazo a.btn-red{display:flex;justify-content:center;margin:14px 14px 0;height:42px;font-size:8.5px;letter-spacing:.9px;border-radius:10px;background:linear-gradient(180deg,#E03D33,#B9271F)!important;color:#fff!important;box-shadow:0 8px 16px -8px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.25)!important;animation:nudge 2.8s ease-in-out 2s infinite}
+#prazo a.btn-red:hover{background:linear-gradient(180deg,#C9332A,#9E2019)!important}
+@keyframes nudge{0%,88%,100%{transform:none}92%{transform:scale(1.03)}96%{transform:scale(.99)}}
+.assure{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 10px;padding:8px 14px 14px;font-size:6.5px;font-weight:600;letter-spacing:.4px;color:var(--brown)}
+@media (prefers-reduced-motion:reduce){#prazo a.btn-red{animation:none}}
+/* simulador v3: categorias */
+.cat{margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.cat button{border:0;display:grid;grid-template-columns:26px minmax(0,1fr);gap:7px;align-items:center;text-align:left;padding:8px;border-radius:10px;background:var(--white);box-shadow:inset 0 0 0 1px rgba(37,36,35,.1);transition:box-shadow .2s,background .2s,transform .15s}
+.cat button:active{transform:scale(.97)}
+.cat .ci{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(37,36,35,.07);color:var(--ink)}
+.cat b{display:block;font-size:9px;font-weight:700;line-height:1.15}
+.cat small{display:block;font-size:6.3px;color:var(--muted);margin-top:1px;line-height:1.3}
+.cat button[aria-checked="true"]{background:#FFF4F3;box-shadow:inset 0 0 0 1.5px var(--red),0 6px 14px -8px rgba(209,52,43,.6)}
+.cat button[aria-checked="true"] .ci{background:var(--red);color:#fff}
+.cat button[aria-checked="true"] b{color:var(--red-d)}
+.og button{animation:li .35s cubic-bezier(.2,.8,.2,1) both}
+.opt-s{font-size:7.5px;color:var(--brown)}
+#prazo .pring .c b.lv{font-size:12px;letter-spacing:.3px}
+#prazo .v.risk b.sm{font-size:10.5px;letter-spacing:0;line-height:1.3;color:var(--ink);opacity:1}
+.v small em{font-style:normal;text-transform:none;letter-spacing:0;font-weight:500}
+
+/* faixa de alerta */
+.mq{transform:none;border-radius:0;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));background:#D1342B;color:#141211;box-shadow:none}
+.mq-in{padding:10px 0}
+.mq-in span{font-size:8px;font-weight:800;letter-spacing:1.4px;color:#141211;gap:6px;padding-right:22px}
+.mq-in span::after{display:none}
+.mq-in svg{flex-shrink:0;color:#141211}
+</style>
+
+</head>
+<body>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Jhemilly Marquiza Advocacia, início">
+      <span class="mono">JM</span>
+      <span><b>JHEMILLY MARQUIZA</b><small>ADVOGADA · OAB/MS 31.545</small></span>
+    </a>
+    <a class="hwa" data-wa="Olá, Dra. Jhemilly! Vim pelo site e preciso de ajuda com um problema com banco ou cobrança." href="https://wa.me/5567991991444" target="_blank" rel="noopener"><span class="dot"></span>WHATSAPP</a>
+  </div>
+</header>
+
+<div class="page" id="topo">
+<div class="wrap">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="hcopy">
+    <span class="eyebrow"><span class="dot" style="width:5px;height:5px"></span>BANCÁRIO E CONSUMIDOR</span>
+    <h1 class="h1" id="h1">Banco ou empresa<br>te deixou com
+      <span class="rot" id="rot" aria-live="off">
+        <span class="on">a conta bloqueada?</span><span>juros abusivos?</span><span>o nome sujo?</span><span>o voo cancelado?</span><span>o plano negado?</span><span>cobrança indevida?</span><span>um bem penhorado?</span>
+      </span>
+    </h1>
+    <p class="lead">Defesa de quem foi prejudicado por bancos, financeiras e empresas: bloqueios e penhoras, juros abusivos, consignados e descontos indevidos, nome sujo, produtos com defeito, voos, plano de saúde e contas de consumo. Atendimento 100% online, para todo o Brasil.</p>
+    <div class="ctas">
+      <a class="btn btn-dark" data-wa="Olá, Dra. Jhemilly! Tive um problema com banco ou empresa e preciso de orientação." href="https://wa.me/5567991991444" target="_blank" rel="noopener">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        <span style="position:relative;z-index:1">FALAR COM A ADVOGADA</span>
+      </a>
+      <a class="btn btn-line" href="#casos">VER CASOS QUE ATENDO
+        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg></a>
+    </div>
+    <div class="trust">
+      <span><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg>100% ONLINE</span>
+      <span><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>TODO O BRASIL</span>
+    </div>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mq-in"><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>CONTA BLOQUEADA!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>PENHORA DE SALÁRIO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>JUROS ABUSIVOS!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>CONSIGNADO INDEVIDO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>BUSCA E APREENSÃO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>GOLPE DO PIX!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>NOME SUJO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>PRODUTO COM DEFEITO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>VOO CANCELADO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>PLANO DE SAÚDE!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>SUPERENDIVIDAMENTO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>CONTA BLOQUEADA!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>PENHORA DE SALÁRIO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>JUROS ABUSIVOS!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>CONSIGNADO INDEVIDO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>BUSCA E APREENSÃO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>GOLPE DO PIX!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>NOME SUJO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>PRODUTO COM DEFEITO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>VOO CANCELADO!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>PLANO DE SAÚDE!</span><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>SUPERENDIVIDAMENTO!</span></div></div>
+
+<!-- MOTION -->
+<section class="sec rv" aria-labelledby="h-mov">
+  <span class="kick">COMO UM CASO ANDA</span>
+  <h2 class="h2" id="h-mov">Da conta bloqueada ao <em>dinheiro de volta</em></h2>
+  <p class="sub">Um exemplo de caso bancário, do bloqueio à decisão. Toque nas etapas para ver cada uma.</p>
+  <div class="glass stage">
+    <div class="phone" aria-hidden="true">
+      <div class="screen">
+        <div class="notch"></div>
+        <div class="scn on">
+          <div class="slip">
+            <div class="hd"><span>EXTRATO</span><span>NOV/2026</span></div>
+            <div class="r"><span>Crédito salário</span><b>+2.840</b></div>
+            <div class="r bad"><span>Bloqueio judicial</span><b>−2.840</b></div>
+            <div class="r bad"><span>Seguro não contratado</span><b>−89</b></div>
+            <div class="r"><span>Pix enviado</span><b>−120</b></div>
+            <div class="r"><span>Saldo disponível</span><b>0,00</b></div>
+          </div>
+          <span class="alert">● 2 PONTOS DE ATENÇÃO</span>
+          <p>O salário caiu na conta e foi bloqueado inteiro.</p>
+        </div>
+        <div class="scn">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 14h6M9 17h4"/></svg></div>
+          <h4>Provas reunidas</h4>
+          <div class="ckl"><span>✓ extratos bancários</span><span>✓ holerite ou benefício</span><span>✓ número do processo</span><span>✓ contratos e boletos</span><span>✓ prints das cobranças</span></div>
+        </div>
+        <div class="scn">
+          <div class="doc"><i></i><i></i><i></i><i></i><i></i><i></i><span class="stamp">PROTOCOLADO</span></div>
+          <h4>Pedido de desbloqueio</h4>
+          <span class="pje">PJe · Justiça Comum</span>
+          <p>Petição provando a origem do dinheiro bloqueado.</p>
+        </div>
+        <div class="scn">
+          <h4>Pedidos em discussão</h4>
+          <div class="bars">
+            <div>Salário desbloqueado<i></i></div>
+            <div>Juros revisados<i></i></div>
+            <div>Devolução em dobro<i></i></div>
+            <div>Danos morais<i></i></div>
+          </div>
+          <span class="badge">● DECISÃO DO JUIZ</span>
+        </div>
+        <div class="pbar"><i id="pbar"></i></div>
+      </div>
+    </div>
+    <div class="steps-mini">
+      <button type="button" class="sm on" data-go="0"><span>1</span><div><b>O problema aparece</b><small>Bloqueio na conta, desconto ou cobrança indevida.</small></div></button>
+      <button type="button" class="sm" data-go="1"><span>2</span><div><b>Provas organizadas</b><small>Extratos, contratos e prints.</small></div></button>
+      <button type="button" class="sm" data-go="2"><span>3</span><div><b>Pedido protocolado</b><small>Processo eletrônico, sem sair de casa.</small></div></button>
+      <button type="button" class="sm" data-go="3"><span>4</span><div><b>Decisão ou acordo</b><small>Desbloqueio, revisão ou indenização.</small></div></button>
+    </div>
+  </div>
+  <p class="sub" style="font-size:6.5px;margin-top:6px;color:#8F8781">Ilustração do fluxo. Cada caso é analisado individualmente.</p>
+</section>
+
+<!-- TABS -->
+<section class="sec rv" id="casos" aria-labelledby="h-area">
+  <span class="kick">ESCOLHA A SITUAÇÃO</span>
+  <h2 class="h2" id="h-area">Casos que <em>eu atendo</em></h2>
+  <p class="sub">Escolha a área e toque na situação para ver as hipóteses e o que pode ser feito.</p>
+  <div class="seg" role="tablist" id="gseg" aria-label="Área">
+    <span class="ind" id="gind" aria-hidden="true"></span>
+    <button type="button" role="tab" aria-selected="true" data-g="banco">BANCÁRIO</button>
+    <button type="button" role="tab" aria-selected="false" data-g="cons">CONSUMIDOR</button>
+  </div>
+  <div class="tabs" role="tablist" id="ptabs" aria-label="Situações">
+      </div>
+  <div class="panel" id="ppanel" role="tabpanel">
+    <div id="pbody"></div>
+  </div>
+</section>
+
+<!-- PRAZO -->
+<section class="sec rv" id="prazo" aria-labelledby="h-prz">
+  <span class="kick kr"><span class="pulse"></span>ALERTA: PATRIMÔNIO EM RISCO</span>
+  <h2 class="h2" id="h-prz">Dinheiro, casa ou carro em risco? <em class="red">O relógio já começou.</em></h2>
+  <p class="sub">Conta bloqueada, imóvel penhorado, veículo apreendido ou dinheiro perdido com banco ou loja: a lei protege mais do que parece, mas os <b class="hl">prazos são curtos</b>. Faça a simulação em 10 segundos.</p>
+
+  <div class="sim">
+    <div class="sim-top"><span class="pulse"></span><b>SIMULADOR DE PROTEÇÃO E RECUPERAÇÃO</b><span class="sim-tag">CPC · CDC</span></div>
+
+    <div class="sim-step">
+      <span class="sn">1</span><span class="sl">O que está em risco?</span>
+      <div class="cat" id="cat" role="radiogroup" aria-label="O que está em risco"></div>
+    </div>
+
+    <div class="sim-step">
+      <span class="sn">2</span><span class="sl" id="subl">Qual é a situação?</span>
+      <div class="og" id="og" role="radiogroup" aria-labelledby="subl"></div>
+    </div>
+
+    <div class="sim-step">
+      <span class="sn">3</span><label class="sl" for="saida" id="vlbl">Qual é o valor?</label>
+      <div class="money"><span>R$</span><input type="text" inputmode="numeric" id="saida" autocomplete="off" aria-describedby="przex"></div>
+      <div class="quick" id="quick"></div>
+      <span class="ex" id="przex">Valor de exemplo. Digite o seu ou toque em um atalho.</span>
+    </div>
+
+    <div class="sim-step" id="dstep">
+      <span class="sn">4</span><label class="sl" for="intim" id="dlbl">Quando você foi intimado(a)?</label> <small class="opt-s">(se souber)</small>
+      <input class="date" type="date" id="intim">
+    </div>
+
+    <div class="res2" aria-live="polite">
+      <div class="r2-row">
+        <div class="pring">
+          <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="tr" cx="50" cy="50" r="42"/><circle class="pr" id="ringpr" cx="50" cy="50" r="42" stroke-dasharray="263.9" stroke-dashoffset="263.9"/></svg>
+          <div class="c"><b id="ringn">—</b><small id="ringl">PODE SER<br>PROTEGIDO</small></div>
+        </div>
+        <div class="vals">
+          <div class="v ok"><small id="v1l">PODE SER LIBERADO</small><b id="vlib">—</b></div>
+          <div class="v risk"><small id="v2l">CONTINUA EM RISCO</small><b id="vrisk">—</b></div>
+        </div>
+      </div>
+      <p class="prz-msg" id="przmsg"></p>
+      <div class="clock" id="clock">
+        <span class="ci2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg></span>
+        <span><b id="clk-t">Prazo</b><small id="clk-s"></small></span>
+      </div>
+      <div class="days" id="days" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <div class="why">
+      <span class="wl">POR QUE NÃO ESPERAR</span>
+      <div class="w"><span class="wn">!</span><span><b>A proteção não é automática.</b> Impenhorabilidade, devolução em dobro e indenização precisam ser pedidas, com provas.</span></div>
+      <div class="w"><span class="wn">!</span><span><b>Os prazos são curtos.</b> 5 dias no bloqueio de conta e na busca e apreensão, 15 dias para contestar penhora e avaliação.</span></div>
+      <div class="w"><span class="wn">!</span><span><b>Depois da transferência ou do leilão, reverter é muito mais difícil.</b> Agir antes preserva o seu patrimônio.</span></div>
+    </div>
+
+    <a class="btn btn-red" id="przwa" target="_blank" rel="noopener" href="https://wa.me/5567991991444">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+      <span style="position:relative;z-index:1" id="ctal">QUERO PROTEGER MEU PATRIMÔNIO</span>
+    </a>
+    <div class="assure"><span>✓ Análise pelo WhatsApp</span><span>✓ Conversa sigilosa</span><span>✓ 100% online</span></div>
+  </div>
+  <p class="sub" style="font-size:6.5px;margin-top:6px;color:#8F8781">Simulação simplificada e meramente informativa (CPC, arts. 833, 854 e 917; Lei 8.009/1990; Decreto-Lei 911/1969; CDC, arts. 18, 35 e 42), com salário mínimo de R$ 1.621. Os prazos são estimados e não consideram feriados nem a forma da intimação. Cada caso é analisado individualmente e não há garantia de resultado.</p>
+</section>
+
+<!-- DIAGNOSTICO -->
+<section class="sec rv" id="diagnostico" aria-labelledby="h-diag">
+  <span class="kick">DIAGNÓSTICO EM 30 SEGUNDOS</span>
+  <h2 class="h2" id="h-diag">Qual é o <em>seu caso?</em></h2>
+  <p class="sub">Três toques. No fim, sua mensagem para o WhatsApp já sai pronta com o resumo.</p>
+  <div class="diag" id="diag">
+    <div class="dsteps" aria-hidden="true"><i id="ds0"></i><i id="ds1"></i><i id="ds2"></i></div>
+    <div id="dbody"></div>
+  </div>
+</section>
+
+<!-- GUARDE / EVITE -->
+<section class="sec rv" aria-labelledby="h-ge">
+  <span class="kick">ANTES DE QUALQUER PASSO</span>
+  <h2 class="h2" id="h-ge">Problema com banco <em>ou empresa?</em></h2>
+  <p class="sub">O que você guarda hoje vira prova amanhã. E algumas atitudes podem enfraquecer o seu caso.</p>
+  <div class="seg" role="tablist" id="seg">
+    <span class="ind" id="sind" aria-hidden="true"></span>
+    <button type="button" role="tab" aria-selected="true" data-k="faca">GUARDE</button>
+    <button type="button" role="tab" aria-selected="false" data-k="evite">EVITE</button>
+  </div>
+  <div class="chk" id="chk" role="tabpanel"></div>
+</section>
+
+<!-- ETAPAS -->
+<section class="sec rv" aria-labelledby="h-et">
+  <span class="kick">ATENDIMENTO</span>
+  <h2 class="h2" id="h-et">Como funciona <em>comigo</em></h2>
+  <div class="tl" id="tl">
+    <span class="fill" aria-hidden="true"></span>
+    <div class="st" style="--lc:#E1306C"><span class="no">01</span><b>Você me conta o que aconteceu</b><p>Pelo WhatsApp, com extratos, contratos, prints e o número do processo, se houver.</p></div>
+    <div class="st" style="--lc:#EC5450"><span class="no">02</span><b>Análise do caso e das provas</b><p>Confiro contratos, cobranças, negativas e o que a lei garante a você.</p></div>
+    <div class="st" style="--lc:#F77737"><span class="no">03</span><b>Contrato e procuração digitais</b><p>Tudo assinado pelo celular, com assinatura eletrônica.</p></div>
+    <div class="st" style="--lc:#BD5976"><span class="no">04</span><b>Atuação no processo</b><p>Pedido de liminar, desbloqueio, revisão de contrato ou ação de indenização, tudo eletrônico.</p></div>
+    <div class="st" style="padding-bottom:0;--lc:#833AB4"><span class="no">05</span><b>Acompanhamento até o fim</b><p>Você recebe as atualizações do caso pelo WhatsApp, com linguagem simples.</p></div>
+  </div>
+</section>
+
+<!-- SOBRE MIM -->
+<section class="sec rv" id="sobre" aria-labelledby="h-sobre">
+  <span class="kick">SOBRE MIM</span>
+  <h2 class="h2" id="h-sobre">Quem vai cuidar <em>do seu caso</em></h2>
+  <div class="about">
+    <div class="ab-top">
+      <div class="ab-ph"><img src="data:image/jpeg;base64,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" alt="Retrato da advogada Jhemilly Marquiza"></div>
+      <div class="ab-id"><span class="nm">Jhemilly Marquiza</span><span class="oab">ADVOGADA · OAB/MS 31.545</span></div>
+    </div>
+    <p class="ab-bio">Formada pela Universidade Federal de Mato Grosso do Sul, especialista em Direito Penal Econômico e em Processo Civil (pós-graduação lato sensu). Meu propósito é buscar justiça de maneira ética e leal, usando a tecnologia e recursos eficientes para a solução de conflitos.</p>
+    <div class="ab-meta">
+      <span><b>Desde 2020</b>atuação jurídica</span>
+      <span><b>Campo Grande/MS</b>sede</span>
+      <span><b>Todo o Brasil</b>100% online</span>
+    </div>
+    <p class="ab-style">Advocacia <b>artesanal, humana, analítica e eficiente.</b></p>
+  </div>
+</section>
+
+<!-- DIREITOS -->
+<section class="sec rv" aria-labelledby="h-dir">
+  <span class="kick">BASE LEGAL</span>
+  <h2 class="h2" id="h-dir">O que a lei <em>protege</em> do seu bolso</h2>
+  <p class="sub">Limites e prazos garantidos por lei, no banco e no consumo. Arraste para o lado e confira.</p>
+  <div class="cards" id="cards">
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/><path d="M21 9h-6a3 3 0 0 0 0 6h6z"/></svg></span><span class="ref">CPC, art. 833, X</span></div><span class="tg">POUPANÇA E RESERVAS</span><span class="big">40<small> salários mínimos</small></span><p>Valor guardado em poupança é impenhorável até esse limite. A Justiça tem estendido a proteção a outras reservas.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></span><span class="ref">CPC, art. 833, IV</span></div><span class="tg">SALÁRIO E APOSENTADORIA</span><span class="big">Impenhorável<small> em regra</small></span><p>Salários, aposentadorias e pensões são protegidos, salvo pensão alimentícia e situações excepcionais.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><span class="ref">CPC, art. 854, § 3º</span></div><span class="tg">PRAZO APÓS O BLOQUEIO</span><span class="big">5<small> dias</small></span><p>Para provar que o valor bloqueado é impenhorável ou maior que a dívida, contados da intimação.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg></span><span class="ref">Lei 8.009/1990</span></div><span class="tg">BEM DE FAMÍLIA</span><span class="big">1<small> imóvel de moradia</small></span><p>O imóvel onde a família mora é, em regra, protegido da penhora. Há exceções previstas em lei.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span><span class="ref">CDC, art. 42</span></div><span class="tg">COBRANÇA INDEVIDA</span><span class="big">2×</span><p>Quem pagou o que não devia tem direito à devolução em dobro, com correção e juros.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><span class="ref">Súmula 548 STJ</span></div><span class="tg">NOME LIMPO</span><span class="big">5<small> dias úteis</small></span><p>Prazo para o credor tirar o seu nome do cadastro de inadimplentes depois do pagamento.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span><span class="ref">CDC, art. 18</span></div><span class="tg">PRODUTO COM DEFEITO</span><span class="big">30<small> dias</small></span><p>Prazo para a empresa consertar. Depois disso, você escolhe: troca, dinheiro de volta ou abatimento.</p></div>
+    <div class="lc"><div class="lh"><span class="li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg></span><span class="ref">CDC, art. 49</span></div><span class="tg">ARREPENDIMENTO</span><span class="big">7<small> dias</small></span><p>Para desistir de compras feitas fora da loja, como na internet ou por telefone, com reembolso total.</p></div>
+  </div>
+  <div class="cdots" id="cdots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+
+<!-- HONORARIOS -->
+<section class="sec rv" id="honorarios" aria-labelledby="h-hon">
+  <span class="kick" id="h-hon">HONORÁRIOS</span>
+  <p class="sub" style="margin-top:6px">Os valores são definidos em contrato, depois da análise do seu caso.</p>
+  <div class="fees">
+    <div class="fee"><b>PAGAMENTO</b><span>Boleto ou cartão de crédito parcelados, Pix e débito, sem necessidade de entrada.</span></div>
+    <div class="fee"><b>COBRADOS À PARTE</b><span>Consulta jurídica, análise documental e processual, cálculos e pareceres, separadamente ou junto com a atuação jurídica.</span></div>
+    <div class="fee"><b>NÃO INCLUSOS</b><span>Deslocamento, custas processuais, serviços notariais e cartorários e despesas extraordinárias.</span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec rv" aria-labelledby="h-faq">
+  <span class="kick">DÚVIDAS FREQUENTES</span>
+  <h2 class="h2" id="h-faq">Antes de <em>chamar</em></h2>
+  <div class="faq" id="faq"></div>
+</section>
+
+<!-- CTA FINAL -->
+<a class="wa rv" data-wa="Olá, Dra. Jhemilly! Quero entender os meus direitos como consumidor(a)." href="https://wa.me/5567991991444" target="_blank" rel="noopener">
+  <span class="tt">Consumidor <em>tem direitos.</em> Banco também tem limites.</span>
+  <small>Conte o que aconteceu e receba um retorno sobre os próximos passos.</small>
+  <span class="btn btn-dark">
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+    <span style="position:relative;z-index:1">FALAR NO WHATSAPP</span>
+  </span>
+</a>
+
+<!-- CONTATO -->
+<section class="sec rv" id="contato" aria-labelledby="h-ct">
+  <span class="kick">CONTATO</span>
+  <h2 class="h2" id="h-ct">Fale <em>comigo</em></h2>
+  <div class="ct">
+    <div class="cr">
+      <span class="ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
+      <span><span class="cl">WHATSAPP E TELEFONE</span><span class="cv">+55 (67) 99199-1444</span></span>
+      <span class="acts"><button type="button" class="ca" data-copy="+55 67 99199-1444">COPIAR</button><a class="ca pri" data-wa="Olá, Dra. Jhemilly! Vim pelo site e gostaria de falar sobre o meu caso com banco ou cobrança." href="https://wa.me/5567991991444" target="_blank" rel="noopener">ABRIR</a></span>
+    </div>
+    <div class="cr">
+      <span class="ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+      <span><span class="cl">LIGAÇÃO</span><span class="cv">(67) 99199-1444</span></span>
+      <span class="acts"><a class="ca pri" href="tel:+5567991991444">LIGAR</a></span>
+    </div>
+    <div class="cr">
+      <span class="ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+      <span><span class="cl">E-MAIL</span><span class="cv">jhemillymarquiza.adv@gmail.com</span></span>
+      <span class="acts"><button type="button" class="ca" data-copy="jhemillymarquiza.adv@gmail.com">COPIAR</button></span>
+    </div>
+    <a class="cr" href="https://www.instagram.com/jhemarquiz/" target="_blank" rel="noopener">
+      <span class="ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span>
+      <span><span class="cl">INSTAGRAM</span><span class="cv">@jhemarquiz</span></span>
+      <span class="acts"><span class="ca">VER</span></span>
+    </a>
+    <a class="cr" href="https://www.linkedin.com/in/jhemilly-marquiza-00b886370" target="_blank" rel="noopener">
+      <span class="ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 10v7M7 7h.01M11 17v-7M11 13a3 3 0 0 1 6 0v4"/></svg></span>
+      <span><span class="cl">LINKEDIN</span><span class="cv">Jhemilly Marquiza</span></span>
+      <span class="acts"><span class="ca">VER</span></span>
+    </a>
+  </div>
+  <div class="cbadges"><span>SEDE EM CAMPO GRANDE/MS</span><span>ATUAÇÃO NACIONAL</span><span>100% ONLINE</span></div>
+</section>
+
+<footer class="foot">
+  <span>© 2026 Jhemilly Marquiza · Advogada · OAB/MS 31.545</span>
+  <span>Sede em Campo Grande/MS · Atuação em todo o Brasil · 100% online</span>
+  <span>Conteúdo de caráter informativo. Cada caso é analisado individualmente e não há garantia de resultado.</span>
+</footer>
+
+</div>
+</div>
+
+<div class="bar" id="bar">
+  <div class="bar-in">
+    <span class="dot"></span>
+    <span><b>Problema com banco ou empresa?</b><small>Atendimento online · todo o Brasil</small></span>
+    <a class="btn btn-light shine" data-wa="Olá, Dra. Jhemilly! Estou com um problema com banco, dívida ou cobrança e preciso de orientação." href="https://wa.me/5567991991444" target="_blank" rel="noopener"><span style="position:relative;z-index:1">CHAMAR AGORA</span></a>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* Número com DDI + DDD, só dígitos */
+  var WA = '5567991991444';
+  function waLink(msg){ return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(msg); }
+  function bindWa(root){ (root||document).querySelectorAll('[data-wa]').forEach(function(a){ a.href = waLink(a.getAttribute('data-wa')); }); }
+  bindWa();
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function svg(p,s){ return '<svg width="'+(s||12)+'" height="'+(s||12)+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>'; }
+  var ICON = {
+    wa: svg('<path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/>',10),
+    arrow: svg('<path d="M7 17L17 7"/><path d="M8 7h9v9"/>',8)
+  };
+  var GK = '<span class="gk">' + svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>',10).replace('stroke-width="2"','stroke-width="3"') + '</span>';
+
+  /* progress + sticky bar */
+  var prog = document.getElementById('prog'), bar = document.getElementById('bar');
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    var p = h > 0 ? scrollY / h : 0;
+    prog.style.transform = 'scaleX(' + p + ')';
+    bar.classList.toggle('show', scrollY > 420 && p < .97);
+    tlUpdate();
+  }
+
+  /* rotating word */
+  var rw = document.querySelectorAll('#rot span'), ri = 0;
+  if (!reduce) setInterval(function(){
+    var cur = rw[ri]; cur.classList.remove('on'); cur.classList.add('off');
+    ri = (ri + 1) % rw.length; var nx = rw[ri];
+    nx.classList.remove('off'); void nx.offsetWidth; nx.classList.add('on');
+    setTimeout(function(){ cur.classList.remove('off'); }, 600);
+  }, 2200);
+
+  /* phone motion */
+  var scenes = document.querySelectorAll('.scn'), minis = document.querySelectorAll('.sm'), pb = document.getElementById('pbar');
+  var si = 0, st = null, DUR = 3600;
+  function show(i){
+    si = i;
+    scenes.forEach(function(s,k){ s.classList.toggle('on', k === i); });
+    minis.forEach(function(s,k){ s.classList.toggle('on', k === i); });
+    pb.classList.remove('run'); void pb.offsetWidth; pb.style.setProperty('--d', DUR + 'ms'); pb.classList.add('run');
+    clearTimeout(st); if (!reduce) st = setTimeout(function(){ show((si + 1) % scenes.length); }, DUR);
+  }
+  minis.forEach(function(b){ b.addEventListener('click', function(){ show(+b.dataset.go); }); });
+  show(0);
+
+  /* situation tabs: bancário | consumidor */
+  var PG = {
+    banco: [
+    { c:'#B5654A', k:'Conta bloqueada', t:'Bloqueio de conta e salário', s:'CPC, ARTS. 833 E 854',
+      ic:'<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+      l:['Conta bloqueada pelo Sisbajud sem aviso','Salário, aposentadoria ou pensão bloqueados','Poupança ou reserva de até 40 salários mínimos penhorada','Bloqueio em valor maior que a dívida ou em várias contas'],
+      w:'Valores impenhoráveis podem ser liberados. O pedido deve ser feito em até 5 dias depois da intimação do bloqueio (CPC, art. 854, § 3º), por isso é importante agir rápido.' },
+    { c:'#C08A2E', k:'Penhora de bens', t:'Penhora de imóvel, carro e bens', s:'LEI 8.009/1990 · CPC, ART. 833',
+      ic:'<path d="M3 10l9-6 9 6"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>',
+      l:['Casa onde a família mora penhorada (bem de família)','Carro, máquinas ou ferramentas usados para trabalhar','Imóvel financiado com leilão marcado por atraso','Avaliação do bem abaixo do valor de mercado'],
+      w:'O único imóvel de moradia da família é, em regra, protegido pela Lei 8.009/1990. Instrumentos de trabalho e bens da casa também têm proteção. Mesmo com leilão marcado, ainda pode ser possível contestar a penhora e a avaliação.' },
+    { c:'#2E6A9E', k:'Juros abusivos', t:'Revisão de contratos bancários', s:'CDC, ARTS. 6º E 51',
+      ic:'<path d="M19 5L5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>',
+      l:['Juros muito acima da taxa média do Banco Central','Seguros e tarifas embutidos sem autorização (venda casada)','Cartão de crédito rotativo e cheque especial que só crescem','Renegociações que aumentam a dívida em vez de diminuir'],
+      w:'É possível pedir a revisão do contrato e a devolução do que foi pago a mais. A taxa média divulgada pelo Banco Central para o mesmo tipo de operação é a principal referência para mostrar o abuso.' },
+    { c:'#8A4FA0', k:'Consignado', t:'Consignado e descontos indevidos', s:'CDC, ART. 42',
+      ic:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M7 15h4"/>',
+      l:['Empréstimo consignado que você não contratou','Cartão consignado (RMC ou RCC) descontado do benefício','Descontos de associações no INSS sem autorização','Tarifas, seguros ou pacotes cobrados sem contratação'],
+      w:'O que foi descontado indevidamente deve ser devolvido em dobro (CDC, art. 42, parágrafo único), e o caso pode gerar indenização por danos morais.' },
+    { c:'#4F6B3A', k:'Veículo', t:'Financiamento e busca e apreensão', s:'DECRETO-LEI 911/1969',
+      ic:'<path d="M5 17h14M6 17l1.5-5h9L18 17"/><circle cx="8" cy="18" r="1.5"/><circle cx="16" cy="18" r="1.5"/><path d="M8 12l1-3h6l1 3"/>',
+      l:['Carro ou moto apreendido por atraso nas parcelas','Ação de busca e apreensão recebida','Parcelas que não diminuem por causa dos juros','Tarifas de cadastro, avaliação e registro cobradas a mais'],
+      w:'Depois da apreensão, há prazo de 5 dias para pagar a dívida pendente e reaver o veículo e de 15 dias para apresentar defesa. Falhas na notificação e cobranças abusivas no contrato podem ser discutidas.' },
+    { c:'#C25B82', k:'Golpes', t:'Golpes e fraudes bancárias', s:'SÚMULA 479 STJ',
+      ic:'<path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M12 8v5M12 16h.01"/>',
+      l:['Golpe do Pix ou da falsa central do banco','Empréstimos e compras feitos por terceiros em seu nome','Conta invadida ou cartão clonado','Banco que se recusa a devolver ou a investigar'],
+      w:'Os bancos respondem pelas fraudes praticadas por terceiros dentro das operações bancárias (STJ, Súmula 479). Avise o banco e registre boletim de ocorrência o quanto antes.' }
+    ],
+    cons: [
+    { c:'#C8463B', k:'Nome sujo', t:'Negativação indevida', s:'CDC, ART. 43 · SÚMULA 548 STJ',
+      ic:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M17 3l4 4M21 3l-4 4"/>',
+      l:['Nome no Serasa ou SPC por dívida já paga ou que não é sua','Negativação sem aviso prévio por escrito','Nome mantido negativado depois do pagamento','Cobranças com ameaça, exposição ou constrangimento'],
+      w:'A negativação indevida costuma gerar indenização por danos morais. Depois do pagamento, o credor tem 5 dias úteis para retirar o seu nome do cadastro (STJ, Súmula 548).' },
+    { c:'#2E6A9E', k:'Compras', t:'Produto com defeito e compra online', s:'CDC, ARTS. 18, 35 E 49',
+      ic:'<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>',
+      l:['Produto com defeito que não foi consertado em 30 dias','Compra pela internet que não chegou','Desistência em 7 dias recusada pela loja','Oferta ou preço anunciado que não foi cumprido'],
+      w:'Se o defeito não for resolvido em 30 dias, você pode escolher entre a troca, o dinheiro de volta ou o abatimento no preço. Em compras fora da loja, há 7 dias para desistir com reembolso total.' },
+    { c:'#3A7CA5', k:'Voos', t:'Voo atrasado, cancelado e bagagem', s:'RESOLUÇÃO ANAC 400 · CDC',
+      ic:'<path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
+      l:['Voo cancelado ou com atraso de mais de 4 horas','Overbooking: embarque negado','Bagagem extraviada, danificada ou violada','Reembolso negado ou oferecido só como crédito'],
+      w:'A companhia deve prestar assistência material (comunicação, alimentação e hospedagem, conforme o tempo de espera) e oferecer reacomodação ou reembolso. Os prejuízos comprovados podem gerar indenização.' },
+    { c:'#2E9E5E', k:'Plano de saúde', t:'Negativas do plano de saúde', s:'LEI 9.656/1998 · LEI 14.454/2022',
+      ic:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/><path d="M12 9v5M9.5 11.5h5"/>',
+      l:['Cirurgia, exame ou tratamento negado','Terapias negadas (como para autismo/TEA)','Reajuste abusivo da mensalidade','Cancelamento do plano sem motivo ou durante tratamento'],
+      w:'Negativas podem ser questionadas na Justiça, inclusive com pedido de liminar em casos urgentes. Tratamentos fora do rol da ANS podem ser cobertos quando cumpridos os requisitos da Lei 14.454/2022.' },
+    { c:'#C08A2E', k:'Contas e serviços', t:'Telefonia, internet e energia', s:'CDC, ARTS. 22 E 42',
+      ic:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+      l:['Serviço ou pacote cobrado sem contratação','Conta de luz ou água com valor fora da realidade','Corte de serviço essencial por dívida antiga','Cancelamento pedido que continua sendo cobrado'],
+      w:'Serviços essenciais devem ser contínuos e adequados. O que foi cobrado indevidamente e pago pode ser devolvido em dobro, e o corte por débitos antigos costuma ser considerado irregular pela Justiça.' },
+    { c:'#8A4FA0', k:'Superendividamento', t:'Dívidas que tomaram a renda', s:'LEI 14.181/2021',
+      ic:'<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/>',
+      l:['Parcelas que consomem quase toda a renda','Vários empréstimos e cartões ao mesmo tempo','Oferta insistente de crédito, inclusive a aposentados','Sem conseguir pagar contas básicas da casa'],
+      w:'A Lei do Superendividamento permite reunir as dívidas e negociar um plano de pagamento de até 5 anos com os credores, preservando o mínimo necessário para você viver.' }
+    ]
+  };
+  var tabs = document.getElementById('ptabs'), pbody = document.getElementById('pbody'), P = PG.banco, grp = 'banco';
+  function buildTabs(){
+    tabs.querySelectorAll('.tab').forEach(function(b){ b.remove(); });
+    P.forEach(function(p,i){
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'tab'; b.setAttribute('role','tab'); b.id = 'tab-' + i;
+      b.setAttribute('aria-selected', i === 0 ? 'true' : 'false'); b.setAttribute('aria-controls','ppanel');
+      b.style.setProperty('--bc', p.c); b.style.setProperty('--bg', p.c);
+      b.innerHTML = '<span class="ti">' + svg(p.ic, 15) + '</span>' + p.k;
+      b.addEventListener('click', function(){ setTab(i); });
+      tabs.appendChild(b);
+    });
+    setTab(0);
+  }
+  function setTab(i){
+    tabs.querySelectorAll('.tab').forEach(function(b,k){ b.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
+    var p = P[i];
+    var pp = document.getElementById('ppanel'); pp.style.setProperty('--bc', p.c); pp.style.setProperty('--bg', p.c);
+    pbody.innerHTML = '<div class="panel-in"><div class="ph-top"><span class="pic">' + svg(p.ic, 19) + '</span><span><b>' + p.t + '</b><small>' + p.s + '</small></span></div>' +
+      '<span class="plbl">CASOS QUE ATENDO</span>' +
+      '<ul class="lst">' + p.l.map(function(x,k){ return '<li style="animation-delay:' + (60 + k*70) + 'ms">' + GK + '<span>' + x + '</span></li>'; }).join('') + '</ul>' +
+      '<div class="what"><span class="wi">' + svg('<path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>', 11) + '</span><span><b>O QUE PODE SER FEITO</b><span>' + p.w + '</span></span></div>' +
+      '<a class="btn btn-dark" target="_blank" rel="noopener" data-wa="Olá, Dra. Jhemilly! Meu caso é sobre ' + p.t.toLowerCase() + '. Pode me ajudar?" href="https://wa.me/' + WA + '">' + ICON.wa + '<span style="position:relative;z-index:1">MEU CASO É ESSE</span>' + ICON.arrow + '</a></div>';
+    bindWa(pbody);
+    pp.setAttribute('aria-labelledby', 'tab-' + i);
+  }
+  var gseg = document.getElementById('gseg'), gind = document.getElementById('gind');
+  gseg.querySelectorAll('button').forEach(function(b){
+    b.addEventListener('click', function(){
+      grp = b.dataset.g; P = PG[grp];
+      gseg.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      gind.style.transform = grp === 'banco' ? 'translateX(0)' : 'translateX(100%)';
+      buildTabs();
+    });
+  });
+  buildTabs();
+
+
+  /* simulador de impenhorabilidade */
+  var SM = 1621, LIM = 40 * SM, CIRC = 263.9;
+  var IC = {
+    din:'<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/>',
+    imo:'<path d="M3 10l9-6 9 6"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>',
+    bens:'<path d="M5 17h14M6 17l1.5-5h9L18 17"/><circle cx="8" cy="18" r="1.5"/><circle cx="16" cy="18" r="1.5"/><path d="M8 12l1-3h6l1 3"/>',
+    cons:'<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>'
+  };
+  var CAT = {
+    din:{ n:'Dinheiro bloqueado', d:'conta, salário, poupança', vl:'Quanto foi bloqueado?', q:[1500,5000,20000,80000], subs:[
+      { k:'sal', b:'Salário', s:'aposentadoria ou pensão', m:'money', clk:'bloq' },
+      { k:'pou', b:'Poupança', s:'reserva guardada', m:'money', clk:'bloq' },
+      { k:'cc', b:'Conta corrente', s:'saldo do dia a dia', m:'money', clk:'bloq' },
+      { k:'apl', b:'Aplicação', s:'CDB, fundo, investimento', m:'money', clk:'bloq' }]},
+    imo:{ n:'Imóvel', d:'casa, apartamento, terreno', vl:'Valor aproximado do imóvel', q:[150000,300000,600000,1000000], subs:[
+      { k:'fam', b:'Casa onde a família mora', s:'imóvel de moradia', m:'lvl', lv:'ALTA', p:.9, law:'Lei 8.009/1990', clk:'pen',
+        t:'O imóvel residencial da família é, <b>em regra, impenhorável</b> (bem de família). Há exceções, como dívida do próprio financiamento, IPTU, condomínio e pensão alimentícia.' },
+      { k:'out', b:'Outro imóvel ou terreno', s:'segunda casa, lote, sala', m:'lvl', lv:'ANALISAR', p:.35, law:'CPC, arts. 874 e 917', clk:'pen',
+        t:'Em regra, pode ser penhorado. Mas a <b>avaliação abaixo do mercado</b> e a <b>penhora muito maior que a dívida</b> podem ser contestadas.' },
+      { k:'lei', b:'Financiado com leilão', s:'parcelas em atraso', m:'lvl', lv:'URGENTE', p:.55, law:'Lei 9.514/1997', clk:'leilao',
+        t:'Até o leilão ainda há caminhos: conferir se a notificação foi regular, negociar e, em certos casos, <b>pagar a dívida para manter o imóvel</b>.' }]},
+    bens:{ n:'Veículo e bens', d:'carro, moto, móveis, ferramentas', vl:'Valor aproximado do bem', q:[5000,30000,60000,120000], subs:[
+      { k:'trab', b:'Veículo de trabalho', s:'app, entregas, táxi, frete', m:'lvl', lv:'ALTA', p:.8, law:'CPC, art. 833, V', clk:'pen',
+        t:'Bens necessários ao exercício da profissão são <b>impenhoráveis</b>. Veículos usados para trabalhar costumam ser protegidos, desde que isso seja comprovado.' },
+      { k:'fin', b:'Busca e apreensão', s:'veículo financiado em atraso', m:'lvl', lv:'URGENTE', p:.55, law:'Decreto-Lei 911/1969', clk:'busca',
+        t:'Depois da apreensão, há <b>5 dias para pagar a dívida pendente</b> e reaver o veículo e 15 dias para apresentar defesa. Juros abusivos e falhas na notificação podem ser discutidos.' },
+      { k:'casa', b:'Móveis e eletrodomésticos', s:'bens da casa', m:'lvl', lv:'ALTA', p:.9, law:'CPC, art. 833, II', clk:'pen',
+        t:'Móveis, utensílios e eletrodomésticos da casa são, <b>em regra, impenhoráveis</b>, exceto os de valor elevado ou além do necessário a um padrão de vida médio.' },
+      { k:'ferr', b:'Ferramentas e máquinas', s:'equipamentos de trabalho', m:'lvl', lv:'ALTA', p:.85, law:'CPC, art. 833, V', clk:'pen',
+        t:'Ferramentas, máquinas e instrumentos necessários ao trabalho são <b>impenhoráveis</b> por lei.' }]},
+    cons:{ n:'Prejuízo de consumo', d:'banco, loja, site, companhia aérea', vl:'Quanto você pagou ou perdeu?', q:[300,1000,3000,8000], subs:[
+      { k:'cob', b:'Cobrança indevida paga', s:'tarifa, fatura, serviço não contratado', m:'cons', x:2, law:'CDC, art. 42', clk:'cons',
+        t:'Quem pagou cobrança indevida tem direito, em regra, à <b>devolução em dobro</b>, com correção e juros, salvo engano justificável da empresa.' },
+      { k:'desc', b:'Desconto no salário ou INSS', s:'consignado, cartão RMC, associação', m:'cons', x:2, law:'CDC, art. 42', clk:'cons',
+        t:'Descontos sem contratação devem ser <b>devolvidos em dobro</b> e podem gerar indenização por danos morais.' },
+      { k:'prod', b:'Produto com defeito', s:'ou compra não entregue', m:'cons', x:1, law:'CDC, arts. 18 e 35', clk:'cons',
+        t:'Sem solução em 30 dias, você pode exigir <b>o dinheiro de volta corrigido</b>, além de prejuízos extras comprovados.' },
+      { k:'voo', b:'Voo, viagem ou serviço', s:'cancelamento, atraso, bagagem', m:'cons', x:1, law:'CDC · ANAC 400', clk:'cons',
+        t:'Reembolso integral, <b>despesas comprovadas</b> (hotel, alimentação, transporte) e, conforme o caso, indenização por danos.' }]}
+  };
+  var CLK = {
+    bloq:{ l:'Quando você foi intimado(a) do bloqueio?', n:5, biz:true, what:'pedir a liberação', idle:'Prazo de 5 dias úteis', idleS:'Informe a data da intimação para ver até quando você pode agir.' },
+    pen:{ l:'Quando você foi intimado(a) da penhora?', n:15, biz:true, what:'contestar a penhora e a avaliação', idle:'Prazo de 15 dias úteis', idleS:'Informe a data da intimação da penhora para ver até quando você pode agir.' },
+    busca:{ l:'Quando o veículo foi apreendido?', n:5, biz:false, what:'pagar a dívida pendente e reaver o veículo', idle:'Prazo de 5 dias', idleS:'Informe a data da apreensão para ver até quando você pode agir.' },
+    leilao:{ l:'Qual é a data do leilão?', fut:true, idle:'Antes do leilão', idleS:'Informe a data marcada para ver quanto tempo resta.' },
+    cons:{ none:true }
+  };
+  var catEl = document.getElementById('cat'), og = document.getElementById('og'), quick = document.getElementById('quick'),
+      valor = document.getElementById('saida'), intim = document.getElementById('intim'), dstep = document.getElementById('dstep'),
+      ringpr = document.getElementById('ringpr'), ringn = document.getElementById('ringn'), ringl = document.getElementById('ringl'),
+      przmsg = document.getElementById('przmsg'), przwa = document.getElementById('przwa'), przex = document.getElementById('przex'),
+      vlib = document.getElementById('vlib'), vrisk = document.getElementById('vrisk'), v1l = document.getElementById('v1l'), v2l = document.getElementById('v2l'),
+      clock = document.getElementById('clock'), clkT = document.getElementById('clk-t'), clkS = document.getElementById('clk-s'),
+      daysEl = document.getElementById('days'), days = daysEl.querySelectorAll('i'), ctal = document.getElementById('ctal');
+  var cat = 'din', sub = CAT.din.subs[0];
+  function brl(n){ return 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits:2, maximumFractionDigits:2 }); }
+  function short(n){ return n >= 1000000 ? (n/1000000).toLocaleString('pt-BR') + ' mi' : n.toLocaleString('pt-BR'); }
+  function parseV(s){ var d = String(s).replace(/\D/g,''); return d ? parseInt(d,10) / 100 : 0; }
+  function setV(n){ valor.value = n ? n.toLocaleString('pt-BR', { minimumFractionDigits:2, maximumFractionDigits:2 }) : ''; }
+  function iso(d){ return d.getFullYear() + '-' + ('0'+(d.getMonth()+1)).slice(-2) + '-' + ('0'+d.getDate()).slice(-2); }
+  function br(d){ return ('0'+d.getDate()).slice(-2) + '/' + ('0'+(d.getMonth()+1)).slice(-2) + '/' + d.getFullYear(); }
+  function isBiz(d){ var w = d.getDay(); return w !== 0 && w !== 6; }
+  var today = new Date(); today.setHours(0,0,0,0); var DAY = 864e5;
+
+  Object.keys(CAT).forEach(function(k){
+    var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role','radio'); b.dataset.c = k;
+    b.setAttribute('aria-checked', k === cat ? 'true' : 'false');
+    b.innerHTML = '<span class="ci">' + svg(IC[k], 14) + '</span><span><b>' + CAT[k].n + '</b><small>' + CAT[k].d + '</small></span>';
+    b.addEventListener('click', function(){ setCat(k); });
+    catEl.appendChild(b);
+  });
+  function setCat(k){
+    cat = k; var C = CAT[k];
+    catEl.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-checked', b.dataset.c === k ? 'true' : 'false'); });
+    og.innerHTML = '';
+    C.subs.forEach(function(s,i){
+      var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role','radio'); b.style.animationDelay = (i*50) + 'ms';
+      b.setAttribute('aria-checked', i === 0 ? 'true' : 'false');
+      b.innerHTML = '<b>' + s.b + '</b><small>' + s.s + '</small>';
+      b.addEventListener('click', function(){ og.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-checked', x === b ? 'true' : 'false'); }); setSub(s); });
+      og.appendChild(b);
+    });
+    document.getElementById('vlbl').textContent = C.vl;
+    quick.innerHTML = C.q.map(function(v){ return '<button type="button" data-v="' + v + '">' + short(v) + '</button>'; }).join('');
+    quick.querySelectorAll('button').forEach(function(b){ b.addEventListener('click', function(){ przex.hidden = true; setV(+b.dataset.v); calc(); }); });
+    setV(C.q[1]);
+    ctal.textContent = k === 'din' ? 'QUERO LIBERAR MEU DINHEIRO' : k === 'cons' ? 'QUERO RECUPERAR MEU DINHEIRO' : 'QUERO PROTEGER MEU PATRIMÔNIO';
+    setSub(C.subs[0]);
+  }
+  function setSub(s){
+    var prev = sub && CLK[sub.clk]; sub = s; var K = CLK[s.clk];
+    if (prev !== K) intim.value = '';
+    dstep.hidden = !!K.none;
+    if (!K.none) { document.getElementById('dlbl').textContent = K.l; if (K.fut) { intim.min = iso(today); intim.removeAttribute('max'); } else { intim.max = iso(today); intim.removeAttribute('min'); } }
+    calc();
+  }
+  function calcClock(){
+    var K = CLK[sub.clk];
+    days.forEach(function(x){ x.className = ''; });
+    clock.classList.remove('late');
+    if (K.none) {
+      daysEl.hidden = true;
+      clkT.textContent = 'Não deixe o prazo passar';
+      clkS.textContent = sub.k === 'prod' ? 'Reclamar de defeito tem prazo de 30 dias (não duráveis) ou 90 dias (duráveis), contados da entrega ou de quando o defeito aparece. Quanto antes, melhor.' : 'O direito de pedir a devolução e a indenização tem prazo e pode prescrever. Quanto antes você agir, mais fácil é reunir as provas.';
+      return '';
+    }
+    if (!intim.value) { daysEl.hidden = !!K.fut; clkT.textContent = K.idle; clkS.textContent = K.idleS; return ''; }
+    var p = intim.value.split('-'), d = new Date(+p[0], +p[1]-1, +p[2]);
+    if (K.fut) {
+      daysEl.hidden = true;
+      var left = Math.round((d - today) / DAY);
+      if (left >= 0) {
+        clkT.textContent = left === 0 ? 'O leilão é hoje' : 'Faltam ' + left + (left === 1 ? ' dia' : ' dias') + ' para o leilão';
+        clkS.textContent = 'Até o leilão ainda é possível agir. Depois dele, reverter fica muito mais difícil.';
+      } else { clock.classList.add('late'); clkT.textContent = 'O leilão já aconteceu'; clkS.textContent = 'Ainda pode haver caminhos, conforme o caso. Não desista sem uma análise.'; }
+      return ' Leilão marcado para ' + br(d) + '.';
+    }
+    daysEl.hidden = false;
+    var end = new Date(d), n = 0, list = [];
+    while (n < K.n) { end.setDate(end.getDate() + 1); if (!K.biz || isBiz(end)) { n++; list.push(new Date(end)); } }
+    var used = 0; list.forEach(function(x,k){ if (x < today) used = k + 1; });
+    var left2 = K.n - used, seg = Math.floor(used / K.n * 5);
+    days.forEach(function(x,k){ if (k < seg) x.className = 'used'; else if (k === seg && left2 > 0) x.className = 'now'; });
+    var unit = K.biz ? ' dias úteis' : ' dias';
+    if (end >= today) {
+      clkT.textContent = left2 <= 1 ? 'Último dia: ' + br(end) : 'Prazo estimado até ' + br(end);
+      clkS.textContent = left2 <= 1 ? 'O prazo termina hoje ou já está no fim. Fale comigo agora.' : 'Restam cerca de ' + left2 + unit + ' para ' + K.what + '.';
+      return ' Data: ' + br(d) + ' (prazo estimado até ' + br(end) + ').';
+    }
+    clock.classList.add('late');
+    clkT.textContent = 'O prazo de ' + K.n + unit + ' pode ter passado';
+    clkS.textContent = 'Ainda pode haver caminhos, conforme o caso e a forma da intimação. Não desista sem uma análise.';
+    return ' Data: ' + br(d) + '.';
+  }
+  function calc(){
+    var v = parseV(valor.value), tail = calcClock(), s = sub, txt, frac;
+    ringn.className = '';
+    if (!v) { ringn.textContent = '—'; ringpr.style.strokeDashoffset = CIRC; vlib.textContent = '—'; vrisk.textContent = '—'; przmsg.innerHTML = 'Digite o valor para ver o resultado.'; return; }
+    vrisk.className = '';
+    if (s.m === 'money') {
+      var prot;
+      if (s.k === 'sal') { prot = v; txt = 'Salário, aposentadoria e pensão são, <b>em regra, impenhoráveis</b> (CPC, art. 833, IV). O ponto-chave é provar, com extratos e holerite, que o valor bloqueado tem essa origem.'; }
+      else { prot = Math.min(v, LIM);
+        txt = (s.k === 'pou' ? 'Na poupança, até <b>' + brl(LIM) + '</b> (40 salários mínimos) são protegidos por lei (CPC, art. 833, X).' : 'Em ' + s.b.toLowerCase() + ', a Justiça tem estendido a proteção da poupança: até <b>' + brl(LIM) + '</b> (40 salários mínimos) podem ser defendidos, se o valor funcionar como reserva.') +
+          (v > LIM ? ' Acima desse limite, o valor pode continuar penhorado.' : ''); }
+      frac = prot / v; ringn.textContent = Math.round(frac * 100) + '%'; ringl.innerHTML = 'PODE SER<br>PROTEGIDO';
+      v1l.textContent = 'PODE SER LIBERADO'; vlib.textContent = brl(prot); v2l.textContent = 'CONTINUA EM RISCO'; vrisk.textContent = brl(v - prot);
+    } else if (s.m === 'lvl') {
+      frac = s.p; ringn.textContent = s.lv; ringn.className = 'lv'; ringl.innerHTML = s.lv === 'URGENTE' ? 'AGIR<br>AGORA' : 'NÍVEL DE<br>PROTEÇÃO';
+      v1l.textContent = 'PATRIMÔNIO EM JOGO'; vlib.textContent = brl(v); v2l.textContent = 'BASE LEGAL'; vrisk.textContent = s.law; vrisk.className = 'sm';
+      txt = s.t;
+    } else {
+      frac = 1; ringn.textContent = s.x === 2 ? '2×' : '100%'; ringl.innerHTML = s.x === 2 ? 'DEVOLUÇÃO<br>EM DOBRO' : 'DE VOLTA<br>+ PREJUÍZOS';
+      v1l.innerHTML = 'VOCÊ PODE RECUPERAR' + (s.x === 2 ? '' : ' <em>(mínimo)</em>'); vlib.textContent = brl(v * s.x); v2l.textContent = 'VALOR PAGO OU PERDIDO'; vrisk.textContent = brl(v);
+      txt = s.t + ' <span style="color:#8A6646">(' + s.law + ')</span>';
+    }
+    ringpr.style.strokeDashoffset = CIRC * (1 - frac);
+    przmsg.innerHTML = txt;
+    przwa.href = waLink('Olá, Dra. Jhemilly! Fiz a simulação no site.\n• Situação: ' + CAT[cat].n + ' – ' + s.b.toLowerCase() + '\n• Valor: ' + brl(v) + (tail ? '\n•' + tail : '') + '\nPode analisar o meu caso?');
+  }
+  valor.addEventListener('input', function(){ przex.hidden = true; setV(parseV(valor.value)); calc(); });
+  intim.addEventListener('input', calc);
+  setCat('din');
+
+  /* diagnostic */
+  var Q = [
+    { lbl:'1 DE 3', h:'Com quem é o problema?', o:[
+      ['Banco ou financeira','<path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6"/>'],
+      ['Processo na Justiça','<path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>'],
+      ['Loja ou site','<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/>'],
+      ['Companhia aérea','<path d="M2 16l20-6-20-6 4 6z"/>'],
+      ['Plano de saúde','<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>'],
+      ['Telefonia, internet ou energia','<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>']]},
+    { lbl:'2 DE 3', h:'O que aconteceu?', o:[
+      ['Dinheiro ou bem bloqueado','<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'],
+      ['Cobrança ou desconto indevido','<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>'],
+      ['Juros ou dívida fora de controle','<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/>'],
+      ['Nome negativado','<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'],
+      ['Serviço negado ou mal prestado','<circle cx="12" cy="12" r="10"/><path d="M4.9 4.9l14.2 14.2"/>'],
+      ['Golpe ou fraude','<path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M12 8v5M12 16h.01"/>']]},
+    { lbl:'3 DE 3', h:'Quando isso aconteceu?', o:[
+      ['Nos últimos 5 dias','<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9"/>'],
+      ['Neste mês','<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18"/>'],
+      ['Há alguns meses','<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 13h3"/>'],
+      ['Há mais de 1 ano','<path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/>']]}
+  ];
+  var A = [], dbody = document.getElementById('dbody');
+  function renderQ(){
+    for (var k = 0; k < 3; k++) document.getElementById('ds' + k).classList.toggle('done', k < A.length);
+    if (A.length >= Q.length) return renderRes();
+    var q = Q[A.length];
+    dbody.innerHTML = '<div class="q panel-in"><span class="q-lbl">' + q.lbl + '</span><h3>' + q.h + '</h3><div class="opts">' +
+      q.o.map(function(o,i){ return '<button type="button" class="opt" aria-pressed="false" data-i="' + i + '">' + svg(o[1]) + '<span>' + o[0] + '</span></button>'; }).join('') + '</div></div>';
+    dbody.querySelectorAll('.opt').forEach(function(b){
+      b.addEventListener('click', function(){ b.setAttribute('aria-pressed','true'); A.push(+b.dataset.i); setTimeout(renderQ, 260); });
+    });
+  }
+  function renderRes(){
+    var who = A[0], what = A[1], when = A[2];
+    var score = 2 + [1,1.5,.5,.5,1.5,.5][who] + [1.5,1,1,1,1,1.5][what] + [2,1,.5,.5][when];
+    var lvl = Math.max(2, Math.min(6, Math.round(score)));
+    var tag = (when === 0 && what === 0) ? 'URGENTE: PRAZO CURTO' : (who === 4 && what === 4) ? 'PODE CABER LIMINAR' : lvl >= 5 ? 'PRIORIDADE ALTA' : lvl >= 4 ? 'PRIORIDADE MÉDIA' : 'VALE ANALISAR';
+    var heads = [
+      'Bloqueio ou penhora: <em>nem tudo</em> pode ser tomado.',
+      'Cobrança indevida: <em>pode voltar em dobro</em>.',
+      'Dívida alta: <em>contrato pode ser revisto</em>.',
+      'Seu nome: <em>negativação tem regras</em>.',
+      'Serviço negado: <em>o CDC está do seu lado</em>.',
+      'Golpe: <em>o banco também responde</em>.'];
+    var tips = [
+      'Salário, aposentadoria, reservas de até 40 salários mínimos e o imóvel de moradia têm proteção legal. Separe extratos, holerite e a intimação.',
+      'Reúna faturas, extratos e protocolos de atendimento. O que foi pago indevidamente pode ser devolvido em dobro (CDC, art. 42).',
+      'Guarde o contrato e o histórico de parcelas. Juros muito acima da média do Banco Central e tarifas sem autorização podem ser revistos. Se as dívidas tomaram a sua renda, a Lei do Superendividamento também pode ajudar.',
+      'Consulte o Serasa ou SPC e guarde o comprovante. Dívida paga ou que não é sua não pode manter seu nome sujo, e isso pode gerar indenização.',
+      'Peça a negativa por escrito e anote os protocolos. Produtos, voos, planos de saúde e serviços essenciais têm regras próprias de proteção ao consumidor.',
+      'Registre boletim de ocorrência, avise o banco e guarde prints e comprovantes. Fraudes dentro das operações bancárias são responsabilidade do banco (STJ, Súmula 479).'];
+    var who_x = [' Contratos bancários costumam ter cláusulas que valem uma análise detalhada.', ' Em processos, os prazos são curtos: vale agir logo.', ' Em compras fora da loja, há 7 dias para desistir.', ' A companhia aérea deve oferecer assistência, reacomodação ou reembolso.', ' Em casos urgentes, cabe pedido de liminar.', ' A suspensão por débitos antigos costuma ser considerada irregular.'];
+    var extra = who_x[who];
+    if (when === 0 && what === 0) extra += ' Atenção: o pedido de desbloqueio tem prazo de 5 dias depois da intimação.';
+    if (when === 3) extra += ' Alguns direitos têm prazo para serem cobrados: não deixe para depois.';
+    var labels = [Q[0].o[who][0], Q[1].o[what][0], Q[2].o[when][0]];
+    var msg = 'Olá, Dra. Jhemilly! Fiz o diagnóstico no site.\n• Problema com: ' + labels[0] + '\n• O que aconteceu: ' + labels[1] + '\n• Quando: ' + labels[2] + '\nPode analisar o meu caso?';
+    var bars = ''; for (var i = 0; i < 6; i++) bars += '<i style="height:' + (25 + i*15) + '%"></i>';
+    dbody.innerHTML = '<div class="res panel-in"><div class="meter" id="meter">' + bars + '</div><span class="res-tag"><span class="dot" style="width:5px;height:5px;background:var(--warn)"></span>' + tag + '</span>' +
+      '<h3>' + heads[what] + '</h3><p>' + tips[what] + extra + '</p>' +
+      '<div class="summary">problema com: ' + labels[0].toLowerCase() + '<br>o que aconteceu: ' + labels[1].toLowerCase() + '<br>quando: ' + labels[2].toLowerCase() + '</div>' +
+      '<div class="row"><a class="btn btn-dark" target="_blank" rel="noopener" href="' + waLink(msg) + '">' + ICON.wa + '<span style="position:relative;z-index:1">ENVIAR MEU CASO</span></a><button type="button" class="reset" id="reset">Refazer</button></div></div>';
+    dbody.querySelectorAll('#meter i').forEach(function(m,k){ setTimeout(function(){ if (k < lvl) m.classList.add('on'); }, 120 + k*110); });
+    document.getElementById('reset').addEventListener('click', function(){ A = []; renderQ(); });
+  }
+  renderQ();
+
+  /* guarde / evite */
+  var G = {
+    faca:[
+      ['Contratos, faturas e extratos','Empréstimos, cartões, financiamentos e contas de consumo.'],
+      ['Notas fiscais e anúncios','Print da oferta, do preço e das condições prometidas.'],
+      ['Protocolos de atendimento','Número, data e nome do atendente de cada contato com a empresa.'],
+      ['Prints, e-mails e gravações','Cobranças, negativas e conversas com o banco ou a empresa.'],
+      ['Intimações e negativas por escrito','Papéis da Justiça, cartas do Serasa e recusas do plano de saúde.']],
+    evite:[
+      ['Ignorar a intimação','Em bloqueios, o prazo para pedir a liberação é de só 5 dias.'],
+      ['Assinar acordo sem ler','Renegociações podem incluir juros e seguros que aumentam a dívida.'],
+      ['Passar dados por telefone','Banco não pede senha, código ou Pix para "proteger" a sua conta.'],
+      ['Aceitar só crédito ou voucher','Em muitos casos, você tem direito ao dinheiro de volta.'],
+      ['Desistir após a primeira negativa','Recusas de banco, loja, companhia aérea ou plano podem ser revistas.']]
+  };
+  var seg = document.getElementById('seg'), sind = document.getElementById('sind'), chk = document.getElementById('chk');
+  function setSeg(k){
+    seg.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-selected', b.dataset.k === k ? 'true' : 'false'); });
+    sind.style.transform = k === 'faca' ? 'translateX(0)' : 'translateX(100%)';
+    var ok = k === 'faca';
+    chk.innerHTML = G[k].map(function(c,i){
+      return '<div class="ck' + (ok ? '' : ' no') + '" style="animation-delay:' + (i*70) + 'ms"><span class="n">' +
+        (ok ? svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>',11) : svg('<path d="M6 6l12 12M18 6L6 18"/>',11)) +
+        '</span><span><b>' + c[0] + '</b><small>' + c[1] + '</small></span></div>';
+    }).join('');
+  }
+  seg.querySelectorAll('button').forEach(function(b){ b.addEventListener('click', function(){ setSeg(b.dataset.k); }); });
+  setSeg('faca');
+
+  /* copiar contato */
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var txt = b.getAttribute('data-copy'), lbl = b.textContent;
+      function ok(){ b.textContent = 'COPIADO'; b.classList.add('done'); setTimeout(function(){ b.textContent = lbl; b.classList.remove('done'); }, 1600); }
+      function fallback(){ var v = b.closest('.cr').querySelector('.cv'); var r = document.createRange(); r.selectNodeContents(v); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+      try { navigator.clipboard.writeText(txt).then(ok, fallback); } catch (e) { fallback(); }
+    });
+  });
+
+  /* timeline */
+  var tl = document.getElementById('tl'), tfill = tl.querySelector('.fill'), sts = tl.querySelectorAll('.st');
+  function tlUpdate(){
+    var r = tl.getBoundingClientRect(), mid = innerHeight * .62;
+    tfill.style.setProperty('--p', Math.max(0, Math.min(1, (mid - r.top) / r.height)));
+    sts.forEach(function(s){ s.classList.toggle('lit', s.getBoundingClientRect().top < mid); });
+  }
+
+  /* cards dots */
+  var cards = document.getElementById('cards'), cd = document.querySelectorAll('#cdots i');
+  cards.addEventListener('scroll', function(){
+    var w = cards.firstElementChild.offsetWidth + 8;
+    var i = Math.min(cd.length - 1, Math.round(cards.scrollLeft / w));
+    cd.forEach(function(d,k){ d.classList.toggle('on', k === i); });
+  }, { passive:true });
+
+  /* faq */
+  var F = [
+    ['Meu salário foi bloqueado. Dá para liberar?','Em regra, sim. Salário, aposentadoria e pensão são impenhoráveis (CPC, art. 833, IV). É preciso provar no processo que o valor bloqueado tem essa origem, e o pedido deve ser feito em até 5 dias depois da intimação.'],
+    ['Posso perder minha casa por causa de dívida?','O imóvel onde a família mora é, em regra, protegido como bem de família (Lei 8.009/1990). Há exceções, como a dívida do financiamento do próprio imóvel, IPTU, condomínio e pensão alimentícia. Cada caso precisa ser analisado.'],
+    ['Como saber se os juros do meu contrato são abusivos?','O ponto de partida é comparar a taxa do contrato com a taxa média de mercado divulgada pelo Banco Central para o mesmo tipo de operação. Juros muito acima dessa média podem ser revistos na Justiça.'],
+    ['Caí em um golpe. O banco tem que devolver?','Depende do caso. Os bancos respondem por falhas de segurança e por fraudes dentro das suas operações (STJ, Súmula 479). Registre boletim de ocorrência, avise o banco e guarde todos os comprovantes.'],
+    ['Comprei um produto com defeito. O que posso exigir?','A empresa tem até 30 dias para resolver. Se não resolver, você escolhe entre a troca do produto, o dinheiro de volta corrigido ou o abatimento no preço (CDC, art. 18).'],
+    ['Meu voo foi cancelado ou atrasou. Tenho direito a quê?','A companhia deve dar assistência material conforme o tempo de espera e oferecer reacomodação ou reembolso. Prejuízos comprovados, como diárias perdidas ou compromissos perdidos, podem gerar indenização.'],
+    ['O plano de saúde negou meu tratamento. E agora?','Peça a negativa por escrito e guarde o pedido médico. Negativas abusivas podem ser levadas à Justiça, inclusive com pedido de liminar quando há urgência.'],
+    ['Tenho muitas dívidas e não consigo pagar. Existe saída?','Sim. A Lei do Superendividamento (Lei 14.181/2021) permite reunir as dívidas e negociar um plano de pagamento de até 5 anos, preservando o mínimo para você viver.'],
+    ['Preciso ir até o escritório?','Não. Todo o atendimento é online: conversa pelo WhatsApp, reuniões por videochamada e contrato com assinatura eletrônica. A sede fica em Campo Grande/MS.'],
+    ['Como funciona o pagamento?','Os honorários são definidos em contrato. Aceito parcelamento no boleto bancário e no cartão de crédito, além de Pix e débito, sem necessidade de entrada. Custas, deslocamento e despesas de cartório são pagos à parte.'],
+    ['É garantido que vou ganhar?','Nenhum advogado pode garantir resultado. O que eu garanto é análise cuidadosa, estratégia clara e acompanhamento do seu caso do início ao fim.']
+  ];
+  var faq = document.getElementById('faq');
+  faq.innerHTML = F.map(function(f,i){
+    return '<div class="fq" data-open="' + (i === 0) + '"><button type="button" id="fq-b' + i + '" aria-expanded="' + (i === 0) + '" aria-controls="fq-a' + i + '"><span>' + f[0] + '</span><span class="pl">' + svg('<path d="M12 5v14M5 12h14"/>',9) + '</span></button><div class="fa" id="fq-a' + i + '" role="region" aria-labelledby="fq-b' + i + '"><div><p>' + f[1] + '</p></div></div></div>';
+  }).join('');
+  faq.querySelectorAll('.fq').forEach(function(q){
+    q.querySelector('button').addEventListener('click', function(){
+      var open = q.dataset.open !== 'true';
+      faq.querySelectorAll('.fq').forEach(function(o){ o.dataset.open = 'false'; o.querySelector('button').setAttribute('aria-expanded','false'); });
+      q.dataset.open = open; this.setAttribute('aria-expanded', open);
+    });
+  });
+
+  /* reveal */
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.remove('pre'); io.unobserve(e.target); } }); }, { rootMargin:'0px 0px -8% 0px' });
+    document.querySelectorAll('.rv').forEach(function(el){
+      if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('pre'); io.observe(el); }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive:true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
